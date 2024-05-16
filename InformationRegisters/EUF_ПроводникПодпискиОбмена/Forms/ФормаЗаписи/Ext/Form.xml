@@ -1,0 +1,148 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="ТипОбъекта" id="1">
+			<DataPath>Запись.ТипОбъекта</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="StartChoice">ТипОбъектаНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="СобытиеПоПодписке" id="4">
+			<DataPath>Запись.СобытиеПоПодписке</DataPath>
+			<ListChoiceMode>true</ListChoiceMode>
+			<ChoiceList>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ПриЗаписиДокумента</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ПриЗаписиДокумента</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ОбработкаПроведения</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ОбработкаПроведения</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ПередУдалениемДокумента</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ПередУдалениемДокумента</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ПриЗаписиСправочника</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ПриЗаписиСправочника</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ПередУдалениемСправочника</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ПередУдалениемСправочника</Value>
+					</xr:Value>
+				</xr:Item>
+				<xr:Item>
+					<xr:Presentation/>
+					<xr:CheckState>0</xr:CheckState>
+					<xr:Value xsi:type="FormChoiceListDesTimeValue">
+						<Presentation>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ПриЗаписиРегистраСведений</v8:content>
+							</v8:item>
+						</Presentation>
+						<Value xsi:type="xs:string">ПриЗаписиРегистраСведений</Value>
+					</xr:Value>
+				</xr:Item>
+			</ChoiceList>
+			<ContextMenu name="СобытиеПоПодпискеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="СобытиеПоПодпискеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="ТипСообщения" id="7">
+			<DataPath>Запись.ТипСообщения</DataPath>
+			<ContextMenu name="ТипСообщенияКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ТипСообщенияРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<CheckBoxField name="Используется" id="10">
+			<DataPath>Запись.Используется</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ИспользуетсяКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ИспользуетсяРасширеннаяПодсказка" id="12"/>
+		</CheckBoxField>
+		<CheckBoxField name="ОбрабатыватьИсходящееСообщениеСразу" id="13">
+			<DataPath>Запись.ОбрабатыватьИсходящееСообщениеСразу</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="ОбрабатыватьИсходящееСообщениеСразуКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ОбрабатыватьИсходящееСообщениеСразуРасширеннаяПодсказка" id="15"/>
+		</CheckBoxField>
+		<InputField name="ОбработчикВМоментСобытия" id="16">
+			<DataPath>Запись.ОбработчикВМоментСобытия</DataPath>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ClearButton>true</ClearButton>
+			<ContextMenu name="ОбработчикВМоментСобытияКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ОбработчикВМоментСобытияРасширеннаяПодсказка" id="18">
+				<Title formatted="true">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Если указывается тип как &lt;b&gt;строка&lt;/&gt;, то указывается &lt;b&gt;имя встроенной обработки в конфигурацию&lt;/&gt;.
+В ином случае &lt;b&gt;ссылка на подключаемую обработку&lt;/&gt;.
+Используется для выполнения дополнительных процедур в момент события подписки, до обработки исходящего сообщения:
+   • для проверка данных
+   • для сбора дополнительной информации
+   • для иных действий связанных с интеграционным бизнес процессом</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.EUF_ПроводникПодпискиОбмена</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

@@ -1,0 +1,717 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="ChoiceProcessing">ОбработкаВыбора</Event>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Закладки" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закладки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ЗакладкиExtendedTooltip" id="75"/>
+			<ChildItems>
+				<Page name="Основные" id="48">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основные</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ОсновныеРасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаШапка" id="141">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа шапка</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Horizontal</Group>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="142"/>
+							<ChildItems>
+								<InputField name="Наименование" id="3">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="4"/>
+									<ExtendedTooltip name="НаименованиеExtendedTooltip" id="87"/>
+								</InputField>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодExtendedTooltip" id="78"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="ВерсияСхемы" id="193">
+							<DataPath>Объект.ВерсияСхемы</DataPath>
+							<ContextMenu name="ВерсияСхемыКонтекстноеМеню" id="194"/>
+							<ExtendedTooltip name="ВерсияСхемыРасширеннаяПодсказка" id="195"/>
+							<Events>
+								<Event name="OnChange">ВерсияСхемыПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="URIПространстваИменПакета" id="217">
+							<DataPath>Объект.URIПространстваИменПакета</DataPath>
+							<DropListButton>true</DropListButton>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="URIПространстваИменПакетаКонтекстноеМеню" id="218"/>
+							<ExtendedTooltip name="URIПространстваИменПакетаРасширеннаяПодсказка" id="219"/>
+							<Events>
+								<Event name="OnChange">URIПространстваИменПакетаПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="КорневойУзел" id="138">
+							<DataPath>Объект.КорневойУзел</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Корневой узел</v8:content>
+								</v8:item>
+							</Title>
+							<DropListButton>true</DropListButton>
+							<ChooseType>false</ChooseType>
+							<ContextMenu name="КорневойУзелКонтекстноеМеню" id="139"/>
+							<ExtendedTooltip name="КорневойУзелРасширеннаяПодсказка" id="140"/>
+						</InputField>
+						<InputField name="ТипОбъектаСистемы" id="220">
+							<DataPath>Объект.ТипОбъектаСистемы</DataPath>
+							<ContextMenu name="ТипОбъектаСистемыКонтекстноеМеню" id="221"/>
+							<ExtendedTooltip name="ТипОбъектаСистемыРасширеннаяПодсказка" id="222"/>
+						</InputField>
+						<InputField name="ИмяКорневогоЭлемента" id="238">
+							<DataPath>Объект.ИмяКорневогоЭлемента</DataPath>
+							<ContextMenu name="ИмяКорневогоЭлементаКонтекстноеМеню" id="239"/>
+							<ExtendedTooltip name="ИмяКорневогоЭлементаРасширеннаяПодсказка" id="240"/>
+						</InputField>
+						<InputField name="Комментарий" id="111">
+							<DataPath>Объект.Комментарий</DataPath>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="112"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="113"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаПолученияДанных" id="207">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрос/Алгоритм получения данных</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница получения данных</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаПолученияДанныхРасширеннаяПодсказка" id="208"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьПояснениеЗапрос" id="241">
+							<Width>200</Width>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В данном поле указывается запрос или алгоритм (установлен флаг "Получать данные выполняемым кодом") получения данных для формирования сообщения.
+В алгоритме возможно использовать следующие переменные:
+&lt;b&gt;ПараметрыПолученияДанных &lt;/&gt;- тип "Структура" передаваемые параметры для получения данных.
+&lt;b&gt;СсылкаНаОбъект&lt;/&gt; - тип "Ссылка", ссылка на выгружаемый объект.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьПояснениеЗапросКонтекстноеМеню" id="242"/>
+							<ExtendedTooltip name="НадписьПояснениеЗапросРасширеннаяПодсказка" id="243"/>
+						</LabelDecoration>
+						<UsualGroup name="ГруппаУправлениеЗапросом" id="228">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа управление запросом</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа управление запросом</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаУправлениеЗапросомРасширеннаяПодсказка" id="229"/>
+							<ChildItems>
+								<CheckBoxField name="ДанныеПолучатьВыполняемымАлгоритмом" id="209">
+									<DataPath>Объект.ДанныеПолучатьВыполняемымАлгоритмом</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Получать данные выполняемым кодом</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Right</TitleLocation>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДанныеПолучатьВыполняемымАлгоритмомКонтекстноеМеню" id="210"/>
+									<ExtendedTooltip name="ДанныеПолучатьВыполняемымАлгоритмомРасширеннаяПодсказка" id="211"/>
+									<Events>
+										<Event name="OnChange">ДанныеПолучатьВыполняемымАлгоритмомПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<Button name="ОткрытьКонструкторЗапроса" id="226">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ОткрытьКонструкторЗапроса</CommandName>
+									<ExtendedTooltip name="ОткрытьКонструкторЗапросаРасширеннаяПодсказка" id="227"/>
+								</Button>
+								<Button name="ПроверитьЗапрос" id="246">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.ПроверитьКодЗапроса</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ПроверитьЗапросРасширеннаяПодсказка" id="247"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<TextDocumentField name="АлгоритмПолученияДанных" id="212">
+							<DataPath>Объект.АлгоритмПолученияДанных</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>200</Width>
+							<ContextMenu name="АлгоритмПолученияДанныхКонтекстноеМеню" id="213">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="АлгоритмПолученияДанныхКонтекстноеМенюОткрытьКонструкторЗапроса" id="215">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьКонструкторЗапроса</CommandName>
+										<ExtendedTooltip name="АлгоритмПолученияДанныхКонтекстноеМенюОткрытьКонструкторЗапросаРасширеннаяПодсказка" id="216"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<ExtendedTooltip name="АлгоритмПолученияДанныхРасширеннаяПодсказка" id="214"/>
+							<Events>
+								<Event name="OnChange">АлгоритмПолученияДанныхПриИзменении</Event>
+							</Events>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаСтруктураПолей" id="143">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Структура полей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница структура полей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаСтруктураПолейРасширеннаяПодсказка" id="144"/>
+					<ChildItems>
+						<Table name="ДеревоПолейСообщения" id="145">
+							<Representation>Tree</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<InitialListView>Beginning</InitialListView>
+							<InitialTreeView>ExpandAllLevels</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ДеревоПолейСообщения</DataPath>
+							<ContextMenu name="ДеревоПолейСообщенияКонтекстноеМеню" id="146"/>
+							<AutoCommandBar name="ДеревоПолейСообщенияКоманднаяПанель" id="147">
+								<ChildItems>
+									<Button name="ДеревоПолейСообщенияДобавить" id="187">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ДеревоПолейСообщения.StandardCommand.Add</CommandName>
+										<ExtendedTooltip name="ДеревоПолейСообщенияДобавитьРасширеннаяПодсказка" id="188"/>
+									</Button>
+									<Button name="ДеревоПолейСообщенияДобавитьНаТекущемУровне" id="250">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.ДеревоПолейСообщения.StandardCommand.Copy</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Добавить на текущем уровне</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBar</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоПолейСообщенияДобавитьНаТекущемУровнеРасширеннаяПодсказка" id="251"/>
+									</Button>
+									<Button name="ДеревоПолейСообщенияСкопировать" id="170">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.СкопироватьСтрокуДереваПолей</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Скопировать</v8:content>
+											</v8:item>
+										</Title>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ДеревоПолейСообщенияСкопироватьРасширеннаяПодсказка" id="171"/>
+									</Button>
+									<Button name="ДеревоПолейСообщенияЗаполнитьСтруктуруПолей" id="199">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ЗаполнитьСтруктуруПолей</CommandName>
+										<ExtendedTooltip name="ДеревоПолейСообщенияЗаполнитьСтруктуруПолейРасширеннаяПодсказка" id="200"/>
+									</Button>
+									<Button name="ЗаполнитьДеревоИзПравила" id="185">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Command.ЗаполнитьДеревоИзПравила</CommandName>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="ЗаполнитьДеревоИзПравилаРасширеннаяПодсказка" id="186"/>
+									</Button>
+									<Button name="ДеревоПолейСообщенияПроверитьЗаполнениеДерева" id="244">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ПроверитьЗаполнениеДерева</CommandName>
+										<ExtendedTooltip name="ДеревоПолейСообщенияПроверитьЗаполнениеДереваРасширеннаяПодсказка" id="245"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДеревоПолейСообщенияРасширеннаяПодсказка" id="148"/>
+							<SearchStringAddition name="ДеревоПолейСообщенияСтрокаПоиска" id="149">
+								<AdditionSource>
+									<Item>ДеревоПолейСообщения</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоПолейСообщенияСтрокаПоискаКонтекстноеМеню" id="150"/>
+								<ExtendedTooltip name="ДеревоПолейСообщенияСтрокаПоискаРасширеннаяПодсказка" id="151"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДеревоПолейСообщенияСостояниеПросмотра" id="152">
+								<AdditionSource>
+									<Item>ДеревоПолейСообщения</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоПолейСообщенияСостояниеПросмотраКонтекстноеМеню" id="153"/>
+								<ExtendedTooltip name="ДеревоПолейСообщенияСостояниеПросмотраРасширеннаяПодсказка" id="154"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДеревоПолейСообщенияУправлениеПоиском" id="155">
+								<AdditionSource>
+									<Item>ДеревоПолейСообщения</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДеревоПолейСообщенияУправлениеПоискомКонтекстноеМеню" id="156"/>
+								<ExtendedTooltip name="ДеревоПолейСообщенияУправлениеПоискомРасширеннаяПодсказка" id="157"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">ДеревоПолейСообщенияПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ДеревоПолейПоле" id="158">
+									<DataPath>ДеревоПолейСообщения.Поле</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>12</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ДеревоПолейПолеКонтекстноеМеню" id="159"/>
+									<ExtendedTooltip name="ДеревоПолейПолеРасширеннаяПодсказка" id="160"/>
+								</InputField>
+								<InputField name="ДеревоПолейИмяТипа" id="204">
+									<DataPath>ДеревоПолейСообщения.ИмяТипа</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<ContextMenu name="ДеревоПолейИмяТипаКонтекстноеМеню" id="205"/>
+									<ExtendedTooltip name="ДеревоПолейИмяТипаРасширеннаяПодсказка" id="206"/>
+								</InputField>
+								<InputField name="ДеревоПолейПространствоИмен" id="201">
+									<DataPath>ДеревоПолейСообщения.ПространствоИмен</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>20</Width>
+									<ContextMenu name="ДеревоПолейПространствоИменКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="ДеревоПолейПространствоИменРасширеннаяПодсказка" id="203"/>
+								</InputField>
+								<InputField name="ДеревоПолейФормулаТега" id="161">
+									<DataPath>ДеревоПолейСообщения.ФормулаТега</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<DropListButton>true</DropListButton>
+									<ChoiceButton>true</ChoiceButton>
+									<ChoiceButtonPicture>
+										<xr:Ref>StdPicture.Change</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ChoiceButtonPicture>
+									<ContextMenu name="ДеревоПолейФормулаТегаКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="ДеревоПолейФормулаТегаРасширеннаяПодсказка" id="163"/>
+									<Events>
+										<Event name="StartChoice">ДеревоПолейФормулаТегаНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="ДеревоПолейСообщенияОбязательное" id="176">
+									<DataPath>ДеревоПолейСообщения.Обязательное</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоПолейСообщенияОбязательноеКонтекстноеМеню" id="177"/>
+									<ExtendedTooltip name="ДеревоПолейСообщенияОбязательноеРасширеннаяПодсказка" id="178"/>
+								</CheckBoxField>
+								<CheckBoxField name="ДеревоПолейСообщенияЭлементТаблицы" id="223">
+									<DataPath>ДеревоПолейСообщения.ЭлементТаблицы</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоПолейСообщенияЭлементТаблицыКонтекстноеМеню" id="224"/>
+									<ExtendedTooltip name="ДеревоПолейСообщенияЭлементТаблицыРасширеннаяПодсказка" id="225"/>
+									<Events>
+										<Event name="OnChange">ДеревоПолейСообщенияЭлементТаблицыПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ДеревоПолейНеВыгружать" id="167">
+									<DataPath>ДеревоПолейСообщения.НеВыгружать</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ДеревоПолейНеВыгружатьКонтекстноеМеню" id="168"/>
+									<ExtendedTooltip name="ДеревоПолейНеВыгружатьРасширеннаяПодсказка" id="169"/>
+								</CheckBoxField>
+								<InputField name="ДеревоПолейКомментарий" id="164">
+									<DataPath>ДеревоПолейСообщения.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Width>10</Width>
+									<HorizontalStretch>false</HorizontalStretch>
+									<ContextMenu name="ДеревоПолейКомментарийКонтекстноеМеню" id="165"/>
+									<ExtendedTooltip name="ДеревоПолейКомментарийРасширеннаяПодсказка" id="166"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаАлгоритмПослеФормированияСообщения" id="230">
+					<Visible>false</Visible>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Алгоритм после формирования сообщения</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница алгоритм после формирования сообщения</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаАлгоритмПослеФормированияСообщенияРасширеннаяПодсказка" id="231"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьПояснение" id="235">
+							<Width>200</Width>
+							<Title formatted="true">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В данном поле указывается алгоритм обработки XML сообщения после заполнениями данными.
+В алгоритме возможно использовать следующие переменные:
+&lt;b&gt;СообщениеXML&lt;/&gt; - тип "ЗаписьXML", заполненное исходящими данными сообщение XML.
+&lt;b&gt;ИсходящиеДанные&lt;/&gt; - тип "Структура", структура с исходящими данными.
+&lt;b&gt;ОбъектXSD&lt;/&gt; - тип "ОбъектXDTO", заполненный исходящими данными объект XDTO.   </v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьПояснениеКонтекстноеМеню" id="236"/>
+							<ExtendedTooltip name="НадписьПояснениеРасширеннаяПодсказка" id="237"/>
+						</LabelDecoration>
+						<Button name="ПроверитьАлгоритм" id="248">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ПроверитьАлгоритм</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.CheckSyntax</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ПроверитьАлгоритмРасширеннаяПодсказка" id="249"/>
+						</Button>
+						<TextDocumentField name="АлгоритмПослеФормированияСообщения" id="232">
+							<DataPath>Объект.АлгоритмПослеФормированияСообщения</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<Width>200</Width>
+							<ContextMenu name="АлгоритмПослеФормированияСообщенияКонтекстноеМеню" id="233"/>
+							<ExtendedTooltip name="АлгоритмПослеФормированияСообщенияРасширеннаяПодсказка" id="234"/>
+						</TextDocumentField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.EUF_ПроводникКонструкторИсходящихXML</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ДеревоПолейСообщения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево полей сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Поле" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поле</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ФормулаТега" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к реквизиту объекта или алгоритм</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НеВыгружать" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не выгружать</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Обязательное" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Обязательное</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПространствоИмен" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пространство имен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ИмяТипа" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя типа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЭлементТаблицы" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Элемент таблицы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьДеревоИзПравила" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить дерево из существующего правила</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить дерево из правила</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьДеревоИзПравила</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ЗаполнитьСтруктуруПолей" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить структуру полей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить структуру полей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьСтруктуруПолей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СкопироватьСтрокуДереваПолей" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать строку дерева полей</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Скопировать строку дерева полей</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.CloneListItem</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СкопироватьСтрокуДереваПолей</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОткрытьКонструкторЗапроса" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть конструктор запроса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть конструктор запроса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.QueryWizard</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ОткрытьКонструкторЗапроса</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьЗаполнениеДерева" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить заполнение дерева</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить заполнение дерева</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьЗаполнениеДерева</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьКодЗапроса" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить код запроса</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить код запроса</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьЗапрос</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьАлгоритм" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить алгоритм</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить алгоритм</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПроверитьАлгоритм</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

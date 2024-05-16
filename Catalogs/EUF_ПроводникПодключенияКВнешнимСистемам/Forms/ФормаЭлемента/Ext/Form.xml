@@ -1,0 +1,1404 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnReadAtServer">ПриЧтенииНаСервере</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<LabelDecoration name="ИнфоИспользованияПодключения" id="178">
+			<TextColor>web:DodgerBlue</TextColor>
+			<Font ref="style:NormalTextFont" faceName="Courier New" bold="true" italic="false" underline="true" strikeout="false" kind="StyleItem"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использования подключения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTipRepresentation>Button</ToolTipRepresentation>
+			<ContextMenu name="ИнфоИспользованияПодключенияКонтекстноеМеню" id="179"/>
+			<ExtendedTooltip name="ИнфоИспользованияПодключенияРасширеннаяПодсказка" id="180">
+				<Title formatted="true">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Программный интерфейс использования:
+
+&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;Функция&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt; &lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #0000FF&gt;QIWI_АдаптеОбмен&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #0000FF&gt;ПолучитьСоединениеСВнешнейСистемой&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;(&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #0000FF&gt;ОбъектИнициатор&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;,&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt; &lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #0000FF&gt;ИнтерфейсТранспорта&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;)&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #228B22&gt;// Параметры:&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #228B22&gt;//  ОбъектИнициатор   -  ПланОбменаСсылка.EUF_ПроводникВнешниеСистемы  &lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #228B22&gt;//       СправочникСсылка.EUF_ПроводникПодключенияКВнешнимСистемам&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #228B22&gt;//       - Объект оносительно которого определяются настройки.&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #228B22&gt;//  ИнтерфейсТранспорта  - Перечисление.EUF_ПроводникИнтерфейсыТранспорта&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #228B22&gt;// &lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+					</v8:item>
+				</Title>
+			</ExtendedTooltip>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаШапка" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шапка</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаШапкаРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаШапкаЛево" id="138">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка лево</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаЛевоРасширеннаяПодсказка" id="139"/>
+					<ChildItems>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="Владелец" id="142">
+							<DataPath>Объект.Owner</DataPath>
+							<ContextMenu name="ВладелецКонтекстноеМеню" id="143"/>
+							<ExtendedTooltip name="ВладелецРасширеннаяПодсказка" id="144"/>
+						</InputField>
+						<InputField name="ИнтерфейсТранспортаПоУмолчанию" id="132">
+							<DataPath>Объект.ИнтерфейсТранспортаПоУмолчанию</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ContextMenu name="ИнтерфейсТранспортаПоУмолчаниюКонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="ИнтерфейсТранспортаПоУмолчаниюРасширеннаяПодсказка" id="134">
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>&lt;fontsize 10&gt;Используется если при получении параметра подключения не был явно указан в соответствующем параметре
+&lt;/&gt;
+&lt;font Arial&gt;&lt;fontsize 10&gt; &lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;EUF_Проводник&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;ПолучитьСоединениеСВнешнейСистемой&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;(&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;ОбъектИнициатор&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;,&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt; ИнтерфейсТранспорта &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;= Неопределено)&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="OnChange">ИнтерфейсТранспортаПоУмолчаниюПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаШапкаПраво" id="140">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шапка право</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаШапкаПравоРасширеннаяПодсказка" id="141"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<CheckBoxField name="ПсевдоПодключение" id="135">
+							<DataPath>Объект.ПсевдоПодключение</DataPath>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<CheckBoxType>Switcher</CheckBoxType>
+							<ContextMenu name="ПсевдоПодключениеКонтекстноеМеню" id="136"/>
+							<ExtendedTooltip name="ПсевдоПодключениеРасширеннаяПодсказка" id="137">
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>&lt;font Arial&gt;&lt;fontsize 10&gt;При включении признака система не будет производить подключение к внешней системе.&lt;/&gt;&lt;/&gt;
+&lt;font Arial&gt;&lt;fontsize 10&gt;Данную опцию можно использовать &lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;b&gt;&lt;fontsize 10&gt;для эмуляции&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 10&gt; ответа от внешней системы или &lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;b&gt;&lt;fontsize 10&gt;автотестов&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Arial&gt;&lt;fontsize 10&gt;:&lt;/&gt;&lt;/&gt;
+&lt;font Arial&gt;&lt;fontsize 10&gt;При штатном получении параметров подключения через общий модуль&lt;/&gt;&lt;/&gt;
+&lt;font Arial&gt;&lt;fontsize 10&gt;      &lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;EUF_Проводник&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;КоннекторКВнешейСистеме(&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;)&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+&lt;fontsize 10&gt;Коннектор будет получен в виде обработки, модуль которой может быть далее использован для эмуляции поведения внешней системы&lt;/&gt;
+&lt;font Courier New&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;   &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;Коннектор&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;=&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt; &lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;Обработки&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;EUF_ПроводникАдминистрирование&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #3366FF&gt;Создать&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;font Courier New&gt;&lt;b&gt;&lt;fontsize 10&gt;&lt;color #FF0000&gt;();&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;</v8:content>
+									</v8:item>
+								</Title>
+							</ExtendedTooltip>
+						</CheckBoxField>
+						<InputField name="Идентификатор" id="175">
+							<DataPath>Объект.ИдентификаторПодключения</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Идентификатор</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonPicture>
+								<xr:Ref>StdPicture.Refresh</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ChoiceButtonPicture>
+							<ContextMenu name="ИдентификаторКонтекстноеМеню" id="176"/>
+							<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="177">
+								<Title formatted="true">
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;color #333333&gt;&lt;bgcolorstyle -23&gt;Используется для определения параметра при обращении из кода.&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+
+&lt;b&gt;&lt;font Almarai&gt;&lt;fontsize 8&gt;&lt;color #333333&gt;&lt;bgcolorstyle -23&gt;Если не заполнен контроль уникальности при записи не проверяется!&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;&lt;/&gt;
+
+&lt;b&gt;&lt;bgcolorstyle -23&gt;Перегенерацию следует делать только при уверенности, что прежний идентификатор нигде не используется!&lt;/&gt;&lt;/&gt;</v8:content>
+									</v8:item>
+								</Title>
+								<BackColor>style:ToolTipBackColor</BackColor>
+							</ExtendedTooltip>
+							<Events>
+								<Event name="StartChoice">ИдентификаторНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Pages name="СтраницыВидовТранспорта" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы видов транспорта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Страницы видов транспорта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="СтраницыВидовТранспортаРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<Page name="НастройкиПодключенийWS" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Web сервис</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки подключений WS</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиПодключенийWSРасширеннаяПодсказка" id="12"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаWSКолонки" id="30">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>WS Колонки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа WSКолонки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаWSКолонкиРасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаWSПрокси" id="25">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>WS прокси</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа WSОпределения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаWSПроксиРасширеннаяПодсказка" id="26"/>
+									<ChildItems>
+										<InputField name="WSURIПространстваИменСервиса" id="32">
+											<DataPath>Объект.WSURIПространстваИменСервиса</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>URI пространства имен</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="WSURIПространстваИменСервисаКонтекстноеМеню" id="33"/>
+											<ExtendedTooltip name="WSURIПространстваИменСервисаРасширеннаяПодсказка" id="34"/>
+										</InputField>
+										<InputField name="WSИмяСервиса" id="17">
+											<DataPath>Объект.WSИмяСервиса</DataPath>
+											<ContextMenu name="WSИмяСервисаКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="WSИмяСервисаРасширеннаяПодсказка" id="19"/>
+											<Events>
+												<Event name="OnChange">WSИмяСервисаПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="WSПользовательПрокси" id="38">
+											<DataPath>Объект.WSПользовательПрокси</DataPath>
+											<ContextMenu name="WSПользовательПроксиКонтекстноеМеню" id="39"/>
+											<ExtendedTooltip name="WSПользовательПроксиРасширеннаяПодсказка" id="40"/>
+											<Events>
+												<Event name="OnChange">WSПользовательПроксиПриИзменении</Event>
+											</Events>
+										</InputField>
+										<InputField name="WSПароль" id="50">
+											<DataPath>WSПароль</DataPath>
+											<PasswordMode>true</PasswordMode>
+											<AutoMarkIncomplete>false</AutoMarkIncomplete>
+											<ChoiceButtonPicture>
+												<xr:Ref>CommonPicture.EUF_ПроводникВводимыеСимволыСкрыты</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ChoiceButtonPicture>
+											<ContextMenu name="WSПарольКонтекстноеМеню" id="51"/>
+											<ExtendedTooltip name="WSПарольРасширеннаяПодсказка" id="52"/>
+											<Events>
+												<Event name="OnChange">WSПарольПриИзменении</Event>
+												<Event name="StartChoice">WSПарольНачалоВыбора</Event>
+												<Event name="Tuning">WSПарольРегулирование</Event>
+											</Events>
+										</InputField>
+										<CheckBoxField name="WSАутентификацияОС" id="41">
+											<DataPath>Объект.WSАутентификацияОС</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="WSАутентификацияОСКонтекстноеМеню" id="42"/>
+											<ExtendedTooltip name="WSАутентификацияОСРасширеннаяПодсказка" id="43"/>
+											<Events>
+												<Event name="OnChange">WSАутентификацияОСПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+										<UsualGroup name="ГруппаWSПодключение" id="185">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>WS Подключение</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа WSПодключение</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаWSПодключениеРасширеннаяПодсказка" id="186"/>
+											<ChildItems>
+												<InputField name="WSТаймаут" id="187">
+													<DataPath>Объект.WSТаймаут</DataPath>
+													<SpinButton>true</SpinButton>
+													<ContextMenu name="WSТаймаутКонтекстноеМеню" id="188"/>
+													<ExtendedTooltip name="WSТаймаутРасширеннаяПодсказка" id="189"/>
+												</InputField>
+												<Button name="ПроверитьПодключениеWS" id="62">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ПроверитьПодключениеWS</CommandName>
+													<ExtendedTooltip name="ПроверитьПодключениеWSРасширеннаяПодсказка" id="63"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаWSОпределения" id="23">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>WS определения</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа WSОпределения</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>None</Representation>
+									<ExtendedTooltip name="ГруппаWSОпределенияРасширеннаяПодсказка" id="24"/>
+									<ChildItems>
+										<InputField name="WSСсылкаWSDL" id="27">
+											<DataPath>Объект.WSСсылкаWSDL</DataPath>
+											<ContextMenu name="WSСсылкаWSDLКонтекстноеМеню" id="28"/>
+											<ExtendedTooltip name="WSСсылкаWSDLРасширеннаяПодсказка" id="29"/>
+										</InputField>
+										<InputField name="WSИмяТочкиПодключения" id="20">
+											<DataPath>Объект.WSИмяТочкиПодключения</DataPath>
+											<Enabled>false</Enabled>
+											<ContextMenu name="WSИмяТочкиПодключенияКонтекстноеМеню" id="21"/>
+											<ExtendedTooltip name="WSИмяТочкиПодключенияРасширеннаяПодсказка" id="22"/>
+										</InputField>
+										<InputField name="WSПользовательОпределения" id="35">
+											<DataPath>Объект.WSПользовательОпределения</DataPath>
+											<Enabled>false</Enabled>
+											<ContextMenu name="WSПользовательОпределенияКонтекстноеМеню" id="36"/>
+											<ExtendedTooltip name="WSПользовательОпределенияРасширеннаяПодсказка" id="37"/>
+										</InputField>
+										<InputField name="WSПарольОпределения" id="53">
+											<DataPath>WSПарольОпределения</DataPath>
+											<Enabled>false</Enabled>
+											<PasswordMode>true</PasswordMode>
+											<ChoiceButtonPicture>
+												<xr:Ref>CommonPicture.EUF_ПроводникВводимыеСимволыСкрыты</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ChoiceButtonPicture>
+											<ContextMenu name="WSПарольОпределенияКонтекстноеМеню" id="54"/>
+											<ExtendedTooltip name="WSПарольОпределенияРасширеннаяПодсказка" id="55"/>
+											<Events>
+												<Event name="OnChange">WSПарольОпределенияПриИзменении</Event>
+											</Events>
+										</InputField>
+										<CheckBoxField name="WSАутентификацияОСОпределения" id="44">
+											<DataPath>Объект.WSАутентификацияОСОпределения</DataPath>
+											<Enabled>false</Enabled>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="WSАутентификацияОСОпределенияКонтекстноеМеню" id="45"/>
+											<ExtendedTooltip name="WSАутентификацияОСОпределенияРасширеннаяПодсказка" id="46"/>
+										</CheckBoxField>
+										<CheckBoxField name="ЗаполнятьДругиеПараметрыВручную" id="47">
+											<DataPath>ЗаполнятьДругиеПараметрыВручную</DataPath>
+											<CheckBoxType>Switcher</CheckBoxType>
+											<ContextMenu name="ЗаполнятьДругиеПараметрыВручнуюКонтекстноеМеню" id="48"/>
+											<ExtendedTooltip name="ЗаполнятьДругиеПараметрыВручнуюРасширеннаяПодсказка" id="49"/>
+											<Events>
+												<Event name="OnChange">ЗаполнятьДругиеПараметрыВручнуюПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="НастройкиПодключенийHTTP" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>HTTP сервис</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки подключений WS</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиПодключенийHTTPРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаHTTPПараметры" id="196">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>HTTP параметры</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа HTTPПараметры</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаHTTPПараметрыРасширеннаяПодсказка" id="197"/>
+							<ChildItems>
+								<InputField name="HTTPАдресСервиса" id="64">
+									<DataPath>Объект.HTTPАдресСервиса</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Вводится адрес без http и https, без порта</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ContextMenu name="HTTPАдресСервисаКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="HTTPАдресСервисаРасширеннаяПодсказка" id="66"/>
+								</InputField>
+								<InputField name="HTTPПорт" id="193">
+									<DataPath>Объект.HTTPПорт</DataPath>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ЧГ=</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="HTTPПортКонтекстноеМеню" id="194"/>
+									<ExtendedTooltip name="HTTPПортРасширеннаяПодсказка" id="195"/>
+								</InputField>
+								<InputField name="HTTPТаймаут" id="198">
+									<DataPath>Объект.HTTPТаймаут</DataPath>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="HTTPТаймаутКонтекстноеМеню" id="199"/>
+									<ExtendedTooltip name="HTTPТаймаутРасширеннаяПодсказка" id="200"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="HTTPРесурсНаСервере" id="70">
+							<DataPath>Объект.HTTPРесурсНаСервере</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>При обращении на сервисы 1С структура следующая: /ИмяБазы/hs/корневойURL</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ToolTipRepresentation>Button</ToolTipRepresentation>
+							<InputHint>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>/BaseName/hs/qiwi_adapter</v8:content>
+								</v8:item>
+							</InputHint>
+							<ContextMenu name="HTTPРесурсНаСервереКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="HTTPРесурсНаСервереРасширеннаяПодсказка" id="72"/>
+						</InputField>
+						<UsualGroup name="ГруппаHTTPПараметрыCоединение" id="208">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>HTTP cоединение</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа HTTPПараметры cоединение</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаHTTPПараметрыCоединениеРасширеннаяПодсказка" id="209"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаHTTPАутентификация" id="204">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа HTTPАутентификация</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа HTTPАутентификация</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаHTTPАутентификацияРасширеннаяПодсказка" id="205"/>
+									<ChildItems>
+										<InputField name="HTTPПользователь" id="67">
+											<DataPath>Объект.HTTPПользователь</DataPath>
+											<ContextMenu name="HTTPПользовательКонтекстноеМеню" id="68"/>
+											<ExtendedTooltip name="HTTPПользовательРасширеннаяПодсказка" id="69"/>
+										</InputField>
+										<InputField name="HTTPПароль" id="76">
+											<DataPath>HTTPПароль</DataPath>
+											<PasswordMode>true</PasswordMode>
+											<AutoMarkIncomplete>false</AutoMarkIncomplete>
+											<ChoiceButtonPicture>
+												<xr:Ref>CommonPicture.EUF_ПроводникВводимыеСимволыСкрыты</xr:Ref>
+												<xr:LoadTransparent>false</xr:LoadTransparent>
+											</ChoiceButtonPicture>
+											<ContextMenu name="HTTPПарольКонтекстноеМеню" id="77"/>
+											<ExtendedTooltip name="HTTPПарольРасширеннаяПодсказка" id="78"/>
+											<Events>
+												<Event name="OnChange">HTTPПарольПриИзменении</Event>
+												<Event name="StartChoice">HTTPПарольНачалоВыбора</Event>
+											</Events>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаHTTPДоп" id="210">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>HTTP Доп</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа HTTPДоп</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаHTTPДопРасширеннаяПодсказка" id="211"/>
+									<ChildItems>
+										<CheckBoxField name="HTTPИспользоватьЗащищенноеСоединение" id="73">
+											<DataPath>Объект.HTTPЗащищенноеСоединение</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="HTTPИспользоватьЗащищенноеСоединениеКонтекстноеМеню" id="74"/>
+											<ExtendedTooltip name="HTTPИспользоватьЗащищенноеСоединениеРасширеннаяПодсказка" id="75"/>
+										</CheckBoxField>
+										<CheckBoxField name="HTTPАутентификацияОС" id="190">
+											<DataPath>Объект.HTTPАутентификацияОС</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="HTTPАутентификацияОСКонтекстноеМеню" id="191"/>
+											<ExtendedTooltip name="HTTPАутентификацияОСРасширеннаяПодсказка" id="192"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="HTTPПроверкаСоединения" id="215">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>HTTPПроверка соединения</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>HTTPПроверка соединения</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="HTTPПроверкаСоединенияРасширеннаяПодсказка" id="216"/>
+							<ChildItems>
+								<Button name="ПроверитьПодключениеHTTP" id="206">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроверитьПодключениеHTTP</CommandName>
+									<ExtendedTooltip name="ПроверитьПодключениеHTTPРасширеннаяПодсказка" id="207"/>
+								</Button>
+								<InputField name="HTTPРесурсПроверкиСоединения" id="212">
+									<DataPath>Объект.HTTPРесурсПроверкиСоединения</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Используется GET метод</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<InputHint>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>/BaseName/hs/qiwi_adapter/CheckConnect</v8:content>
+										</v8:item>
+									</InputHint>
+									<ContextMenu name="HTTPРесурсПроверкиСоединенияКонтекстноеМеню" id="213"/>
+									<ExtendedTooltip name="HTTPРесурсПроверкиСоединенияРасширеннаяПодсказка" id="214"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="НастройкиПодключенияCOM" id="100">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>COM 1С</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки подключения COM</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="НастройкиПодключенияCOMРасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаCOMЛев" id="147">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>COM Левая</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа COMЛев</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаCOMЛевРасширеннаяПодсказка" id="148"/>
+							<ChildItems>
+								<LabelDecoration name="ИнфоПодключенияCOM" id="156">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>&lt;b&gt;Используется COM подключение к системам 1С&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<BackColor>style:ToolTipBackColor</BackColor>
+									<ContextMenu name="ИнфоПодключенияCOMКонтекстноеМеню" id="157"/>
+									<ExtendedTooltip name="ИнфоПодключенияCOMРасширеннаяПодсказка" id="158"/>
+								</LabelDecoration>
+								<InputField name="COMИмяПользователя" id="129">
+									<DataPath>Объект.COMИмяПользователя</DataPath>
+									<Width>15</Width>
+									<ContextMenu name="COMИмяПользователяКонтекстноеМеню" id="130"/>
+									<ExtendedTooltip name="COMИмяПользователяРасширеннаяПодсказка" id="131"/>
+								</InputField>
+								<InputField name="COMПароль" id="126">
+									<DataPath>COMПароль</DataPath>
+									<Width>15</Width>
+									<PasswordMode>true</PasswordMode>
+									<ChoiceButtonPicture>
+										<xr:Ref>CommonPicture.EUF_ПроводникВводимыеСимволыСкрыты</xr:Ref>
+										<xr:LoadTransparent>false</xr:LoadTransparent>
+									</ChoiceButtonPicture>
+									<ContextMenu name="COMПарольКонтекстноеМеню" id="127"/>
+									<ExtendedTooltip name="COMПарольРасширеннаяПодсказка" id="128"/>
+									<Events>
+										<Event name="OnChange">COMПарольПриИзменении</Event>
+										<Event name="StartChoice">COMПарольНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="COMАутентификацияОперационнойСистемы" id="123">
+									<DataPath>Объект.COMАутентификацияОперационнойСистемы</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Аутентификация ОС</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="COMАутентификацияОперационнойСистемыКонтекстноеМеню" id="124"/>
+									<ExtendedTooltip name="COMАутентификацияОперационнойСистемыРасширеннаяПодсказка" id="125"/>
+								</CheckBoxField>
+								<Button name="ПроверитьПодключениеCOM" id="149">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроверитьПодключениеCOM</CommandName>
+									<ExtendedTooltip name="ПроверитьПодключениеCOMРасширеннаяПодсказка" id="150"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаCOMПрав" id="145">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>COM Прав</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа COMПрав</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаCOMПравРасширеннаяПодсказка" id="146"/>
+							<ChildItems>
+								<CheckBoxField name="COMФайловаяБазаКорреспондент" id="102">
+									<DataPath>Объект.COMФайловаяБазаКорреспондент</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>База корреспондент</v8:content>
+										</v8:item>
+									</Title>
+									<TitleLocation>Top</TitleLocation>
+									<CheckBoxType>Tumbler</CheckBoxType>
+									<EditFormat>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>БЛ=Клиент-серверная; БИ=Файловая</v8:content>
+										</v8:item>
+									</EditFormat>
+									<ContextMenu name="COMФайловаяБазаКорреспондентКонтекстноеМеню" id="103"/>
+									<ExtendedTooltip name="COMФайловаяБазаКорреспондентРасширеннаяПодсказка" id="104"/>
+									<Events>
+										<Event name="OnChange">COMФайловаяБазаКорреспондентПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<Pages name="ВариантыCOM" id="105">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Варианты COM</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Варианты COM</v8:content>
+										</v8:item>
+									</ToolTip>
+									<PagesRepresentation>None</PagesRepresentation>
+									<ExtendedTooltip name="ВариантыCOMРасширеннаяПодсказка" id="106"/>
+									<ChildItems>
+										<Page name="КлиентСерверныйВариант" id="109">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Клиент серверный вариант</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Клиент серверный вариант</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="КлиентСерверныйВариантРасширеннаяПодсказка" id="110"/>
+											<ChildItems>
+												<InputField name="COMИмяСервера1СПредприятия" id="117">
+													<DataPath>Объект.COMИмяСервера1СПредприятия</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя сервера</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="COMИмяСервера1СПредприятияКонтекстноеМеню" id="118"/>
+													<ExtendedTooltip name="COMИмяСервера1СПредприятияРасширеннаяПодсказка" id="119"/>
+												</InputField>
+												<InputField name="COMИмяБазыНаСервере1СПредприятия" id="120">
+													<DataPath>Объект.COMИмяБазыНаСервере1СПредприятия</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Имя базы на сервере</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="COMИмяБазыНаСервере1СПредприятияКонтекстноеМеню" id="121"/>
+													<ExtendedTooltip name="COMИмяБазыНаСервере1СПредприятияРасширеннаяПодсказка" id="122"/>
+												</InputField>
+											</ChildItems>
+										</Page>
+										<Page name="ФайловыйВариант" id="107">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Файловый вариант</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Файловый вариант</v8:content>
+												</v8:item>
+											</ToolTip>
+											<ExtendedTooltip name="ФайловыйВариантРасширеннаяПодсказка" id="108"/>
+											<ChildItems>
+												<InputField name="COMКаталогИнформационнойБазы" id="111">
+													<DataPath>Объект.COMКаталогИнформационнойБазы</DataPath>
+													<ChoiceButton>true</ChoiceButton>
+													<ContextMenu name="COMКаталогИнформационнойБазыКонтекстноеМеню" id="112"/>
+													<ExtendedTooltip name="COMКаталогИнформационнойБазыРасширеннаяПодсказка" id="113"/>
+													<Events>
+														<Event name="StartChoice">COMКаталогИнформационнойБазыНачалоВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</Page>
+									</ChildItems>
+								</Pages>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="НастройкиПодключенийПоСтроке" id="151">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подключение по строке</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки подключений по строке</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<ExtendedTooltip name="НастройкиПодключенийПоСтрокеРасширеннаяПодсказка" id="152"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаExtSysЛевая" id="168">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ext sys левая</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ext sys левая</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаExtSysЛеваяРасширеннаяПодсказка" id="169"/>
+							<ChildItems>
+								<LabelDecoration name="ИнфоПодключениеПоСтроке" id="153">
+									<Title formatted="true">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Для получения параметров подключения в коде следует использовать идентификатор.
+
+&lt;b&gt;&lt;fontsize 10&gt;Не разрешено хранение паролей в строке подключения!&lt;/&gt;&lt;/&gt;</v8:content>
+										</v8:item>
+									</Title>
+									<BackColor>style:ToolTipBackColor</BackColor>
+									<ContextMenu name="ИнфоПодключениеПоСтрокеКонтекстноеМеню" id="154"/>
+									<ExtendedTooltip name="ИнфоПодключениеПоСтрокеРасширеннаяПодсказка" id="155"/>
+								</LabelDecoration>
+								<Button name="ЗаполнитьШаблонExtSys" id="183">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗаполнитьШаблонExtSys</CommandName>
+									<ExtendedTooltip name="ЗаполнитьШаблонExtSysРасширеннаяПодсказка" id="184"/>
+								</Button>
+								<InputField name="ExtSysСтрокаПодключения" id="159">
+									<DataPath>Объект.ExtSysСтрокаПодключения</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При указании параметров авторизации, в строке необходимо использовать следующие имена параметров: &amp;USER и &amp;PASSWORD. Например:
+User ID=&amp;USER;Password=&amp;PASSWORD.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<MaxWidth>2</MaxWidth>
+									<Height>3</Height>
+									<MaxHeight>3</MaxHeight>
+									<MultiLine>true</MultiLine>
+									<ContextMenu name="ExtSysСтрокаПодключенияКонтекстноеМеню" id="160"/>
+									<ExtendedTooltip name="ExtSysСтрокаПодключенияРасширеннаяПодсказка" id="161"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаExtSysПравая" id="170">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ext sys правая</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ext sys правая</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаExtSysПраваяРасширеннаяПодсказка" id="171"/>
+							<ChildItems>
+								<InputField name="ExtSysИмяПользователя" id="162">
+									<DataPath>Объект.ExtSysИмяПользователя</DataPath>
+									<ContextMenu name="ExtSysИмяПользователяКонтекстноеМеню" id="163"/>
+									<ExtendedTooltip name="ExtSysИмяПользователяРасширеннаяПодсказка" id="164"/>
+								</InputField>
+								<InputField name="ExtSysПароль" id="165">
+									<DataPath>ExtSysПароль</DataPath>
+									<PasswordMode>true</PasswordMode>
+									<ChoiceButtonPicture>
+										<xr:Ref>CommonPicture.EUF_ПроводникВводимыеСимволыСкрыты</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ChoiceButtonPicture>
+									<ContextMenu name="ExtSysПарольКонтекстноеМеню" id="166"/>
+									<ExtendedTooltip name="ExtSysПарольРасширеннаяПодсказка" id="167"/>
+									<Events>
+										<Event name="OnChange">ExtSysПарольПриИзменении</Event>
+										<Event name="StartChoice">ExtSysПарольНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<InputField name="ExtSysИмяПриложенияCOM" id="172">
+									<DataPath>Объект.ExtSysИмяПриложенияCOM</DataPath>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ContextMenu name="ExtSysИмяПриложенияCOMКонтекстноеМеню" id="173"/>
+									<ExtendedTooltip name="ExtSysИмяПриложенияCOMРасширеннаяПодсказка" id="174"/>
+								</InputField>
+								<InputField name="ExtSysТаймаут" id="201">
+									<DataPath>Объект.ExtSysТаймаут</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Передается в структуру параметров подключения. Может быть использован на усмотрение разработчика</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<SpinButton>true</SpinButton>
+									<ContextMenu name="ExtSysТаймаутКонтекстноеМеню" id="202"/>
+									<ExtendedTooltip name="ExtSysТаймаутРасширеннаяПодсказка" id="203"/>
+								</InputField>
+								<Button name="ПроверитьПодключениеExtSys" id="181">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПроверитьПодключениеExtSys</CommandName>
+									<ExtendedTooltip name="ПроверитьПодключениеExtSysРасширеннаяПодсказка" id="182"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="НастройкиНавигационныхСсылок" id="217">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Навигационные ссылки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Настройки навигационных ссылок</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="НастройкиНавигационныхСсылокРасширеннаяПодсказка" id="218"/>
+					<ChildItems>
+						<InputField name="НавигационнаяСсылкаВнешняя" id="219">
+							<DataPath>Объект.НавигационнаяСсылкаВнешняя</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НавигационнаяСсылкаВнешняяКонтекстноеМеню" id="220"/>
+							<ExtendedTooltip name="НавигационнаяСсылкаВнешняяРасширеннаяПодсказка" id="221"/>
+						</InputField>
+						<InputField name="НавигационнаяСсылкаWeb" id="222">
+							<DataPath>Объект.НавигационнаяСсылкаWeb</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НавигационнаяСсылкаWebКонтекстноеМеню" id="223"/>
+							<ExtendedTooltip name="НавигационнаяСсылкаWebРасширеннаяПодсказка" id="224"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="ИспользованиеТекущейНастройки" id="79">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование текущей настройки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование текущей настройки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИспользованиеТекущейНастройкиРасширеннаяПодсказка" id="80"/>
+					<ChildItems>
+						<Table name="ДС_ИспользованиеТекущейНастройки" id="81">
+							<ReadOnly>true</ReadOnly>
+							<Height>3</Height>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ДСИспользованиеТекущейНастройки</DataPath>
+							<RowPictureDataPath>ДСИспользованиеТекущейНастройки.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ДС_ИспользованиеТекущейНастройкиКонтекстноеМеню" id="82"/>
+							<AutoCommandBar name="ДС_ИспользованиеТекущейНастройкиКоманднаяПанель" id="83">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДС_ИспользованиеТекущейНастройкиРасширеннаяПодсказка" id="84"/>
+							<SearchStringAddition name="ДС_ИспользованиеТекущейНастройкиСтрокаПоиска" id="85">
+								<AdditionSource>
+									<Item>ДС_ИспользованиеТекущейНастройки</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДС_ИспользованиеТекущейНастройкиСтрокаПоискаКонтекстноеМеню" id="86"/>
+								<ExtendedTooltip name="ДС_ИспользованиеТекущейНастройкиСтрокаПоискаРасширеннаяПодсказка" id="87"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДС_ИспользованиеТекущейНастройкиСостояниеПросмотра" id="88">
+								<AdditionSource>
+									<Item>ДС_ИспользованиеТекущейНастройки</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДС_ИспользованиеТекущейНастройкиСостояниеПросмотраКонтекстноеМеню" id="89"/>
+								<ExtendedTooltip name="ДС_ИспользованиеТекущейНастройкиСостояниеПросмотраРасширеннаяПодсказка" id="90"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДС_ИспользованиеТекущейНастройкиУправлениеПоиском" id="91">
+								<AdditionSource>
+									<Item>ДС_ИспользованиеТекущейНастройки</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДС_ИспользованиеТекущейНастройкиУправлениеПоискомКонтекстноеМеню" id="92"/>
+								<ExtendedTooltip name="ДС_ИспользованиеТекущейНастройкиУправлениеПоискомРасширеннаяПодсказка" id="93"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="Selection">ДС_ИспользованиеТекущейНастройкиВыбор</Event>
+							</Events>
+							<ChildItems>
+								<LabelField name="ДС_ИспользованиеТекущейНастройкиСсылка" id="94">
+									<DataPath>ДСИспользованиеТекущейНастройки.Ссылка</DataPath>
+									<ContextMenu name="ДС_ИспользованиеТекущейНастройкиСсылкаКонтекстноеМеню" id="95"/>
+									<ExtendedTooltip name="ДС_ИспользованиеТекущейНастройкиСсылкаРасширеннаяПодсказка" id="96"/>
+								</LabelField>
+								<LabelField name="ДС_ИспользованиеТекущейНастройкиТипОбъекта" id="97">
+									<DataPath>ДСИспользованиеТекущейНастройки.ТипОбъекта</DataPath>
+									<ContextMenu name="ДС_ИспользованиеТекущейНастройкиТипОбъектаКонтекстноеМеню" id="98"/>
+									<ExtendedTooltip name="ДС_ИспользованиеТекущейНастройкиТипОбъектаРасширеннаяПодсказка" id="99"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<InputField name="Комментарий" id="56">
+			<DataPath>Объект.Комментарий</DataPath>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<Height>2</Height>
+			<MultiLine>true</MultiLine>
+			<ContextMenu name="КомментарийКонтекстноеМеню" id="57"/>
+			<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="58"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.EUF_ПроводникПодключенияКВнешнимСистемам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="WSПароль" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="WSПарольОпределения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="WSПарольИзменен" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>WS Пароль изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="WSПарольОпределенияИзменен" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>WS Пароль определения изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="HTTPПароль" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="HTTPПарольИзменен" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>HTTP Пароль изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ДСИспользованиеТекущейНастройки" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использование текущей настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	EUF_ПроводникВнешниеСистемы.Ссылка КАК Ссылка,
+	"Внешняя система" КАК ТипОбъекта
+ИЗ
+	ПланОбмена.EUF_ПроводникВнешниеСистемы КАК EUF_ПроводникВнешниеСистемы
+ГДЕ
+	EUF_ПроводникВнешниеСистемы.ПараметрыПодключения = &amp;ПараметрыПодключения
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	EUF_ПроводникНастройкиИсходящихСообщений.Ссылка,
+	"Настрока для исходящего сообщения"
+ИЗ
+	Справочник.EUF_ПроводникНастройкиИсходящихСообщений КАК EUF_ПроводникНастройкиИсходящихСообщений
+ГДЕ
+	EUF_ПроводникНастройкиИсходящихСообщений.ДругиеПараметрыПодключения = &amp;ПараметрыПодключения</QueryText>
+				<KeyField>Ссылка</KeyField>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="ЗаполнятьДругиеПараметрыВручную" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнять другие параметры вручную</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="COMПарольИзменен" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>COMПароль изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="COMПароль" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExtSysПароль" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>50</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ExtSysПарольИзменен" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>ExtSys Пароль изменен</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СоответствиеВкладокИФормата" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Соответствие вкладок и формата</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПроверитьПодключениеWS" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к информационной базе-корреспонденту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.EUF_ПроводникПодключениеЖелтый</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьПодключениеWS</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПроверитьПодключениеCOM" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение COM</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.EUF_ПроводникПодключениеЖелтый</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьПодключениеCOM</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПроверитьПодключениеExtSys" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к информационной базе-корреспонденту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.EUF_ПроводникПодключениеЖелтый</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьПодключениеExtSys</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗаполнитьШаблонExtSys" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить шаблон</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполняет параметры примерным шаблоном</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьШаблонExtSys</Action>
+		</Command>
+		<Command name="ПроверитьПодключениеHTTP" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверить подключение к информационной базе-корреспонденту</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.EUF_ПроводникПодключениеЖелтый</xr:Ref>
+				<xr:LoadTransparent>false</xr:LoadTransparent>
+			</Picture>
+			<Action>ПроверитьПодключениеHTTP</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+	</Commands>
+</Form>

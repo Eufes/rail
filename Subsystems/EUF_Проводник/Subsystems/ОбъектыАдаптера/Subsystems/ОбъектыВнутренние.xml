@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Subsystem uuid="5886e4b2-4f30-4082-bd93-49cfe04a17a7">
+		<Properties>
+			<Name>ОбъектыВнутренние</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты внутренние</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>false</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Модули, обработчики, подписки, обеспечивающие выполнение процесса обмена</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникОбмен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникВызовСервера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникПереопределяемый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникПривилегированный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.EUF_ПроводникСпособыПреобразованияСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EUF_ПроводникПодготовкаИсходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EUF_ПроводникУдалениеНеактуальныхДанных</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">WebService.QIWI_AdapterCentral</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.EUF_ПроводникСостоянияИсходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.EUF_ПроводникУровниСобытийПротокола</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.EUF_ПроводникВариантыПроизвольногоОбработчика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.EUF_ПроводникИнтерфейсыТранспорта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">73998668-7f4c-41e6-b56f-871526c6bd78</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.EUF_ПроводникВводимыеСимволыВидны</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.EUF_ПроводникВводимыеСимволыСкрыты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.EUF_ПроводникУправление</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.EUF_ПроводникСостоянияВходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">HTTPService.QIWI_AdapterCentral</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникШлюзБСПСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникОбщегоНазначения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникКонструкторСообщенийXML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникНаВремяВызоваПовтИсп</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EUF_ПроводникОбработкаВходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">ScheduledJob.EUF_ПроводникОтправкаИсходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.EUF_ПроводникШлюзБСПКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.EUF_ПроводникВнешниеСистемы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.EUF_ПроводникПодключениеЖелтый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.EUF_ПроводникВниманиеКрасный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.EUF_ПроводникКругКрасный</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.EUF_ПроводникКругЗеленый</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonCommand.EUF_ПроводникПараметрыПодключенияКВнешнимСистемам</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>

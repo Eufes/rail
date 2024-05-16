@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="ГруппаСтраниц" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страниц</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницРасширеннаяПодсказка" id="14"/>
+			<ChildItems>
+				<Page name="СтрницаОсновное" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Основное</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стрница основное</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтрницаОсновноеРасширеннаяПодсказка" id="16"/>
+					<ChildItems>
+						<InputField name="Код" id="1">
+							<DataPath>Объект.Code</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<InputField name="Наименование" id="4">
+							<DataPath>Объект.Description</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+						</InputField>
+						<InputField name="НомерВерсии" id="10">
+							<DataPath>Объект.НомерВерсии</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="НомерВерсииКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="НомерВерсииРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<InputField name="Описание" id="7">
+							<DataPath>Объект.Описание</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОписаниеКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="9"/>
+						</InputField>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаXDTO" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>XDTO</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница XDTO</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаXDTOРасширеннаяПодсказка" id="18"/>
+					<ChildItems>
+						<CheckBoxField name="ИспользоватьВстроеннуюСхему" id="22">
+							<DataPath>Объект.ИспользоватьВстроеннуюСхему</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьВстроеннуюСхемуКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="ИспользоватьВстроеннуюСхемуРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="OnChange">ИспользоватьВстроеннуюСхемуПриИзменении</Event>
+							</Events>
+						</CheckBoxField>
+						<UsualGroup name="ГруппаРасположенияАрхива" id="28">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа расположения архива</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа расположения архива</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРасположенияАрхиваРасширеннаяПодсказка" id="29"/>
+							<ChildItems>
+								<Button name="ЗагрузитьСхемыXSD" id="33">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ЗагрузитьСхемыXSD</CommandName>
+									<ExtendedTooltip name="ЗагрузитьСхемыXSDРасширеннаяПодсказка" id="34"/>
+								</Button>
+								<CheckBoxField name="КакФайлZIP" id="35">
+									<DataPath>КакФайлZIP</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>При установке набор схем будет помещен в хранилище как двоичные данные zip файла. В ином случае в хранилище будет помещен массив схем.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<CheckBoxType>Switcher</CheckBoxType>
+									<ContextMenu name="КакФайлZIPКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="КакФайлZIPРасширеннаяПодсказка" id="37"/>
+								</CheckBoxField>
+								<LabelDecoration name="ДекорацияРасположениеАрхива" id="30">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Расположение архива:</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияРасположениеАрхиваКонтекстноеМеню" id="31"/>
+									<ExtendedTooltip name="ДекорацияРасположениеАрхиваРасширеннаяПодсказка" id="32"/>
+								</LabelDecoration>
+								<RadioButtonField name="РежимРаботыНаКлиентеИлиНаСервере" id="25">
+									<DataPath>РежимРаботыНаКлиентеИлиНаСервере</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<RadioButtonType>Auto</RadioButtonType>
+									<ChoiceList>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>На клиентском компьютере</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">0</Value>
+											</xr:Value>
+										</xr:Item>
+										<xr:Item>
+											<xr:Presentation/>
+											<xr:CheckState>0</xr:CheckState>
+											<xr:Value xsi:type="FormChoiceListDesTimeValue">
+												<Presentation>
+													<v8:item>
+														<v8:lang>ru</v8:lang>
+														<v8:content>На сервере</v8:content>
+													</v8:item>
+												</Presentation>
+												<Value xsi:type="xs:decimal">1</Value>
+											</xr:Value>
+										</xr:Item>
+									</ChoiceList>
+									<ContextMenu name="РежимРаботыНаКлиентеИлиНаСервереКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="РежимРаботыНаКлиентеИлиНаСервереРасширеннаяПодсказка" id="27"/>
+									<Events>
+										<Event name="OnChange">РежимРаботыНаКлиентеИлиНаСервереПриИзменении</Event>
+									</Events>
+								</RadioButtonField>
+							</ChildItems>
+						</UsualGroup>
+						<Button name="СохранитьСхемуНаДиск" id="38">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СохранитьСхемуНаДиск</CommandName>
+							<ExtendedTooltip name="СохранитьСхемуНаДискРасширеннаяПодсказка" id="39"/>
+						</Button>
+						<InputField name="ПутьКАрхивуСоСхемамиXSD" id="19">
+							<DataPath>ПутьКАрхивуСоСхемамиXSD</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Путь к архиву со схемами XSD на сервере</v8:content>
+								</v8:item>
+							</Title>
+							<ChoiceButton>true</ChoiceButton>
+							<ContextMenu name="ПутьКАрхивуСоСхемамиXSDКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПутьКАрхивуСоСхемамиXSDРасширеннаяПодсказка" id="21"/>
+							<Events>
+								<Event name="StartChoice">ПутьКПапкеСоСхемамиНачалоВыбора</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.EUF_ПроводникСхемыXSD</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПутьКАрхивуСоСхемамиXSD" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к архиву со схемами XSD</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>250</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ФабрикаXDTOФормы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Фабрика XDTOФормы</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+		</Attribute>
+		<Attribute name="РежимРаботыНаКлиентеИлиНаСервере" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы на клиенте или на сервере</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>0</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Save>
+				<Field>РежимРаботыНаКлиентеИлиНаСервере</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="РежимРаботыНаКлиенте" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы на клиенте</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КакФайлZIP" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Как файл ZIP</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ЗагрузитьСхемыXSD" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить схемы XSD</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить схемы XSD</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьСхемыXSD</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="СохранитьСхемуНаДиск" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить схему на диск</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить схему на диск</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьСхемуНаДиск</Action>
+		</Command>
+	</Commands>
+</Form>

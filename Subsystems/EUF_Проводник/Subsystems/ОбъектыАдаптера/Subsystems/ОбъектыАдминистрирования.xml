@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<Subsystem uuid="124286e5-363f-4eee-b2b6-bf6a12cb52f9">
+		<Properties>
+			<Name>ОбъектыАдминистрирования</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Объекты администрирования</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основные объекты адаптера - справочники и регистры</v8:content>
+				</v8:item>
+			</Explanation>
+			<Picture/>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EUF_ПроводникИдентификаторыВнешнихСистем</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.EUF_ПроводникАдминистрирование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникТипИсходящегоСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EUF_ПроводникОчередьИсходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">e235e0a1-a84b-4ef3-a9ea-1612dc25f5ab</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникСообщенияИсходящие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EUF_ПроводникДанныеВФорматеТранспорта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EUF_ПроводникИспользуемыеНастройкиДляСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникНастройкиИсходящихСообщений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникКонструкторИсходящихXML</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникСхемыXSD</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">37f9f81b-29df-4471-8850-dcee0cbf3ce9</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникТипВходящегоСообщения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникИнтеграционныеПроцессы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникПодключенияКВнешнимСистемам</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">1611b8e5-1a4e-4b91-95c6-95c8fc9a28ef</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EUF_ПроводникКаталогХраненияЛогФайлов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.EUF_ПроводникИмяИБДляРаботыРеглЗаданий</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникСообщенияВходящие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EUF_ПроводникОчередьВходящих</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.EUF_ПроводникПодпискиОбмена</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.EUF_ПроводникНастройкиВходящихСообщений</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects/>
+	</Subsystem>
+</MetaDataObject>
