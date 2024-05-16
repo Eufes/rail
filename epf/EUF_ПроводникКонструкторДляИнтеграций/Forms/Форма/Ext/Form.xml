@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Pages name="ГруппаШаги" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шаги</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа шаги</v8:content>
+				</v8:item>
+			</ToolTip>
+			<PagesRepresentation>TabsOnLeftHorizontal</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаШагиРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<Page name="ГруппаШагКорреспонденты" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Корреспонденты</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаг корреспонденты</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаШагКорреспондентыРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьКорреспонденты" id="61">
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<Font height="10" kind="AutoFont"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задайте имя интеграционного процесса. Желательно указание направления с указанием систем (т.к. так будет легче ориентироваться в базах корреспондентах):
+Например:
+Выгрузка договоров из ДО в БП КОРП.
+Обмен данными по контрагентам между УХ и ДО.
+Получение отчета по физлицам из ЗУП в УХ
+
+По наименованию будет сгенерирован идентификатор интеграционного процесса в виде мнемокода</v8:content>
+								</v8:item>
+							</Title>
+							<BackColor>style:ToolTipBackColor</BackColor>
+							<ContextMenu name="НадписьКорреспондентыКонтекстноеМеню" id="62"/>
+							<ExtendedTooltip name="НадписьКорреспондентыРасширеннаяПодсказка" id="63"/>
+						</LabelDecoration>
+						<InputField name="НаименованиеИнтеграционногоПроцесса" id="106">
+							<DataPath>НаименованиеИнтеграционногоПроцесса</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НаименованиеИнтеграционногоПроцессаКонтекстноеМеню" id="107"/>
+							<ExtendedTooltip name="НаименованиеИнтеграционногоПроцессаРасширеннаяПодсказка" id="108"/>
+						</InputField>
+						<UsualGroup name="ГруппаСистемаТекущая" id="70">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа система текущая</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа система текущая</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСистемаТекущаяРасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<InputField name="КодТекущейСистемы" id="64">
+									<DataPath>КодТекущейСистемы</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Задайте код, который будет использоваться как идентификатор. Например do, zup, uh, zup_fl и т.д.</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ToolTipRepresentation>Button</ToolTipRepresentation>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КодТекущейСистемыКонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="КодТекущейСистемыРасширеннаяПодсказка" id="66"/>
+								</InputField>
+								<InputField name="НаименованиеТекущейСистемы" id="72">
+									<DataPath>НаименованиеТекущейСистемы</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НаименованиеТекущейСистемыКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="НаименованиеТекущейСистемыРасширеннаяПодсказка" id="74"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаСистемаКорреспондент" id="75">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа система корреспондент</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа система корреспондент</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаСистемаКорреспондентРасширеннаяПодсказка" id="76"/>
+							<ChildItems>
+								<InputField name="КодСистемыКорреспондента" id="67">
+									<DataPath>КодСистемыКорреспондента</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КодСистемыКорреспондентаКонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="КодСистемыКорреспондентаРасширеннаяПодсказка" id="69"/>
+								</InputField>
+								<InputField name="НаименованиеСистемыКорреспондента" id="77">
+									<DataPath>НаименованиеСистемыКорреспондента</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НаименованиеСистемыКорреспондентаКонтекстноеМеню" id="78"/>
+									<ExtendedTooltip name="НаименованиеСистемыКорреспондентаРасширеннаяПодсказка" id="79"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаИсходящиеЗапросыТекущейСистемы" id="80">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Исходящие запросы текущей системы</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа исходящие запросы текущей системы</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаИсходящиеЗапросыТекущейСистемыРасширеннаяПодсказка" id="81"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьИсходящиеЗапросыТекущейСистемы" id="82">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Определяется будет ли текущая система отправлять запросы в систему корреспондента. </v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьИсходящиеЗапросыТекущейСистемыКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="НадписьИсходящиеЗапросыТекущейСистемыРасширеннаяПодсказка" id="84"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВходящиеЗапросыКорреспондента" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Входящие запросы корреспондента</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа входящие запросы корреспондента</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<ExtendedTooltip name="ГруппаВходящиеЗапросыКорреспондентаРасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<LabelDecoration name="НадписьВходящиеЗапросы" id="87">
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Если система-корреспондент отдает асинхроно квитанцию или отправляет свои запросы в текущую систему, то для этого будет использоваться обрабтчик входящих сообщений.</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="НадписьВходящиеЗапросыКонтекстноеМеню" id="88"/>
+									<ExtendedTooltip name="НадписьВходящиеЗапросыРасширеннаяПодсказка" id="89"/>
+								</LabelDecoration>
+								<Table name="ТипыВходящихСообщений" id="90">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ТипыВходящихСообщений</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ТипыВходящихСообщенийКонтекстноеМеню" id="91"/>
+									<AutoCommandBar name="ТипыВходящихСообщенийКоманднаяПанель" id="92"/>
+									<ExtendedTooltip name="ТипыВходящихСообщенийРасширеннаяПодсказка" id="93"/>
+									<SearchStringAddition name="ТипыВходящихСообщенийСтрокаПоиска" id="94">
+										<AdditionSource>
+											<Item>ТипыВходящихСообщений</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТипыВходящихСообщенийСтрокаПоискаКонтекстноеМеню" id="95"/>
+										<ExtendedTooltip name="ТипыВходящихСообщенийСтрокаПоискаРасширеннаяПодсказка" id="96"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ТипыВходящихСообщенийСостояниеПросмотра" id="97">
+										<AdditionSource>
+											<Item>ТипыВходящихСообщений</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ТипыВходящихСообщенийСостояниеПросмотраКонтекстноеМеню" id="98"/>
+										<ExtendedTooltip name="ТипыВходящихСообщенийСостояниеПросмотраРасширеннаяПодсказка" id="99"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ТипыВходящихСообщенийУправлениеПоиском" id="100">
+										<AdditionSource>
+											<Item>ТипыВходящихСообщений</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ТипыВходящихСообщенийУправлениеПоискомКонтекстноеМеню" id="101"/>
+										<ExtendedTooltip name="ТипыВходящихСообщенийУправлениеПоискомРасширеннаяПодсказка" id="102"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<InputField name="ТипыВходящихСообщенийМнемокодТипаВходящего" id="103">
+											<DataPath>ТипыВходящихСообщений.МнемокодТипаВходящего</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТипыВходящихСообщенийМнемокодТипаВходящегоКонтекстноеМеню" id="104"/>
+											<ExtendedTooltip name="ТипыВходящихСообщенийМнемокодТипаВходящегоРасширеннаяПодсказка" id="105"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаШагИспользованиеОчередиВходящей" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование очереди входящей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаг использование очереди входящей</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаШагИспользованиеОчередиВходящейРасширеннаяПодсказка" id="4"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьИспользованиеОчереди" id="5">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Будет ли использоваться входящая очередь (асинхронный обмен)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьИспользованиеОчередиКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="НадписьИспользованиеОчередиРасширеннаяПодсказка" id="7"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаШагИспользованиеОчередиИсходящей" id="36">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Использование очереди исходящей</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаг использование очереди</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаШагИспользованиеОчередиИсходящейРасширеннаяПодсказка" id="37"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьИспользованиеОчередиИсходящей" id="38">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Будет ли использоваться исходящая очередь (асинхронный обмен)</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьИспользованиеОчередиИсходящейКонтекстноеМеню" id="39"/>
+							<ExtendedTooltip name="НадписьИспользованиеОчередиИсходящейРасширеннаяПодсказка" id="40"/>
+						</LabelDecoration>
+						<CheckBoxField name="ИспользоватьОчередьИсходящую" id="41">
+							<DataPath>ИспользоватьОчередьИсходящую</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИспользоватьОчередьИсходящуюКонтекстноеМеню" id="42"/>
+							<ExtendedTooltip name="ИспользоватьОчередьИсходящуюРасширеннаяПодсказка" id="43"/>
+						</CheckBoxField>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаШагОтветныеКвитанции" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответные квитанции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаг ответные квитанции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаШагОтветныеКвитанцииРасширеннаяПодсказка" id="9"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьОтветныеКвитанции" id="10">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Будут использоваться ответные квитанции</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьОтветныеКвитанцииКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="НадписьОтветныеКвитанцииРасширеннаяПодсказка" id="12"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаШагПараметрыИнтеграции" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры интеграции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаг параметры интеграции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаШагПараметрыИнтеграцииРасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьПараметрыИнтеграции" id="15">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Необходимо получать параметры интеграции</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьПараметрыИнтеграцииКонтекстноеМеню" id="16"/>
+							<ExtendedTooltip name="НадписьПараметрыИнтеграцииРасширеннаяПодсказка" id="17"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаШагОтправкаНаПочту" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отправка на почту</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаг отправка на почту</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаШагОтправкаНаПочтуРасширеннаяПодсказка" id="19"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьОтправкаНаПочту" id="20">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Отправлять на почту информацию по ошибкам</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьОтправкаНаПочтуКонтекстноеМеню" id="21"/>
+							<ExtendedTooltip name="НадписьОтправкаНаПочтуРасширеннаяПодсказка" id="22"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаШагОсновнойФорматСтруктурыДанныхОбмена" id="51">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Формат структуры данных обмена</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа шаг основной формат структуры данных обмена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаШагОсновнойФорматСтруктурыДанныхОбменаРасширеннаяПодсказка" id="52"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьФорматСтруктуры" id="53">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основной формат исходящего сообщения</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьФорматСтруктурыКонтекстноеМеню" id="54"/>
+							<ExtendedTooltip name="НадписьФорматСтруктурыРасширеннаяПодсказка" id="55"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаИтоговаяСтраница" id="29">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Итоговая страница</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа итоговая страница</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаИтоговаяСтраницаРасширеннаяПодсказка" id="30"/>
+					<ChildItems>
+						<LabelDecoration name="НадписьИтоговая" id="56">
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Параметры интеграционного взаимодействия с системой корреспондентом</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НадписьИтоговаяКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="НадписьИтоговаяРасширеннаяПодсказка" id="58"/>
+						</LabelDecoration>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+		<UsualGroup name="ГруппаКнопкиШагов" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопки шагов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа кнопки шагов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопкиШаговРасширеннаяПодсказка" id="28"/>
+			<ChildItems>
+				<Button name="КнопкаНазад" id="25">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КнопкаНазад</CommandName>
+					<ExtendedTooltip name="КнопкаНазадРасширеннаяПодсказка" id="26"/>
+				</Button>
+				<Button name="КнопкаДалее" id="23">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КнопкаДалее</CommandName>
+					<ExtendedTooltip name="КнопкаДалееРасширеннаяПодсказка" id="24"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРезультат" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа результат</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<ExtendedTooltip name="ГруппаРезультатРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<InputField name="СгенерированныйКод" id="46">
+					<DataPath>СгенерированныйКод</DataPath>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<MultiLine>true</MultiLine>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СгенерированныйКодКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="СгенерированныйКодРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<Button name="СформироватьМодульОбработки" id="31">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.СформироватьМодульОбработки</CommandName>
+					<ExtendedTooltip name="СформироватьМодульОбработкиРасширеннаяПодсказка" id="32"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:ExternalDataProcessorObject.EUF_ПроводникКонструкторДляИнтеграций</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ИспользоватьОчередьИсходящую" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Использовать очередь исходящую</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СгенерированныйКод" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сгенерированный код</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодТекущейСистемы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код текущей системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>9</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КодСистемыКорреспондента" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Код системы корреспондента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>9</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаименованиеТекущейСистемы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование текущей системы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НаименованиеСистемыКорреспондента" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование системы корреспондента</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипыВходящихСообщений" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Типы входящих сообщений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="МнемокодТипаВходящего" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Мнемокод типа входящего</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="НаименованиеИнтеграционногоПроцесса" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование интеграционного процесса</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>150</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КнопкаДалее" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Далее</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка далее</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="КнопкаНазад" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопка назад</v8:content>
+				</v8:item>
+			</ToolTip>
+		</Command>
+		<Command name="СформироватьМодульОбработки" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать модуль обработки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сформировать модуль обработки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СформироватьМодульОбработки</Action>
+		</Command>
+	</Commands>
+</Form>
