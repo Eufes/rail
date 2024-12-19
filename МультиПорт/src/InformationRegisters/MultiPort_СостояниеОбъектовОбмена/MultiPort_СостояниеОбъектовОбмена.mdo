@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="743945c9-06ec-48a3-8420-0e7e92282ac6">
+  <producedTypes>
+    <selectionType typeId="edf69050-9ae6-4fa5-8492-5f16aefb9588" valueTypeId="c9b8ed97-2321-4d9a-ad1a-872d8fbf4efa"/>
+    <listType typeId="d7a04cb9-e93d-4226-9510-7023bb12bef2" valueTypeId="335315c9-6d74-4e07-9dea-5068aa52cca6"/>
+    <managerType typeId="d78f2988-a75a-425f-a268-6f823231466b" valueTypeId="63c4d93a-2d8c-45d5-bd0e-7a05d3a1bb4c"/>
+    <recordSetType typeId="a23bf3b2-5d20-425c-8fda-ef0b1cfd5de0" valueTypeId="6ddd72b2-0b85-44e9-ad31-b6966eea2a40"/>
+    <recordKeyType typeId="56e29593-5d68-4a23-97d8-c5ca11d97479" valueTypeId="41ab4c73-47b0-4222-95db-de333b7306a4"/>
+    <recordType typeId="f245cdf4-cb15-49f2-93fd-2f10a5af4818" valueTypeId="55c55ace-ef8e-4001-a5c8-77dfb6b55c3b"/>
+    <recordManagerType typeId="9cfb95cc-7801-4a71-b25b-af399fb2261b" valueTypeId="35c97bd5-01f9-4305-98af-ecdacdf9c6d3"/>
+  </producedTypes>
+  <name>MultiPort_СостояниеОбъектовОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояние объектов обмена (MultiPort)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Состояние объектов обмена (MultiPort)</value>
+  </listPresentation>
+  <resources uuid="a5138ef8-d17d-4100-ada0-a7cb5e99fd7d">
+    <name>Состояние</name>
+    <synonym>
+      <key>ru</key>
+      <value>Состояние</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="ccc4aa13-2a58-47ed-ac08-ce5de1226b4f">
+    <name>ДатаСостояния</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дата состояния</value>
+    </synonym>
+    <type>
+      <types>Date</types>
+      <dateQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="66ba2ee8-be20-49b1-987f-84f3804d6e1c">
+    <name>Объект</name>
+    <synonym>
+      <key>ru</key>
+      <value>Объект</value>
+    </synonym>
+    <type>
+      <types>DefinedType.MultiPort_ОбъектыОбмена</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="81b97e14-7703-46d3-939c-9876bcb71697">
+    <name>ВнешняяСистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешняя система</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef.MultiPort_ВнешниеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="451c0622-ea49-4a37-bb0d-bf1d078e05a2">
+    <name>ИнтеграционныйПроцесс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интеграционный процесс</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_ИнтеграционныеПроцессы</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Необязательное. Используется в случае, если объект участвует в различных интеграционных процессах</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+</mdclass:InformationRegister>

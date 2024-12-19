@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5459349e-788b-407c-b1f2-652e6d61f54f">
+  <name>ОбъектыССылкамиНаБСП</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты с сылками на БСП</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Объекты использующие модули и другие объекты библиотеки стандартных подсистем.</value>
+  </explanation>
+  <content>Catalog.ДополнительныеОтчетыИОбработки</content>
+  <content>Catalog.УчетныеЗаписиЭлектроннойПочты</content>
+  <parentSubsystem>Subsystem.MultiPort.Subsystem.ОбъектыДополнительные</parentSubsystem>
+</mdclass:Subsystem>

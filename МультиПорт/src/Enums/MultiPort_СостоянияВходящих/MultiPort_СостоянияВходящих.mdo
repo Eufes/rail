@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5a2ef7d6-4113-4ddf-9370-83322abcb904">
+  <producedTypes>
+    <refType typeId="080cab28-7929-4ea1-ac68-77219c074f52" valueTypeId="2099dba8-03c3-42f0-9a88-43dc09ffd097"/>
+    <listType typeId="b0e1d057-a29b-446c-9a8e-3db3607f331b" valueTypeId="d001ab7a-6ccb-4099-9acc-6c232463557b"/>
+    <managerType typeId="89de0c46-50d1-43e7-8814-2a497bbbbf99" valueTypeId="64d55f48-d996-4ed3-876e-a17542c4ec01"/>
+  </producedTypes>
+  <name>MultiPort_СостоянияВходящих</name>
+  <synonym>
+    <key>ru</key>
+    <value>Состояния входящих (MultiPort)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="ffc2bf32-cb4a-4145-b228-1b945c6bed2f">
+    <name>Зарегистрировано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Зарегистрировано</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6c6b7880-24e4-4605-8e12-ac330e400a14">
+    <name>Обработано</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработано</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

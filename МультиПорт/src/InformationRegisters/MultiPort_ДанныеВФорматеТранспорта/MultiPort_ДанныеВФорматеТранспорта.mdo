@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75d26d43-5c79-4107-a0de-6e1392d31918">
+  <producedTypes>
+    <selectionType typeId="10649fc8-9446-4ab2-93b6-2ec5392d3ebe" valueTypeId="56a7275b-997a-4440-81ea-225c24f78c22"/>
+    <listType typeId="55d62310-28eb-4e32-be98-bd0e792e5a31" valueTypeId="738f1f88-eaa4-4735-874d-ecba82190424"/>
+    <managerType typeId="01237717-6144-470c-8a1d-ebda2c6b0279" valueTypeId="aee5aadd-5b26-49b0-b590-5ce2fcd9721b"/>
+    <recordSetType typeId="136f6eb6-82ce-43b8-ac64-1bc99898264a" valueTypeId="7b18a95f-55b3-4aff-8d79-9d5fbce7d499"/>
+    <recordKeyType typeId="78039e95-e3cb-4313-b8ef-87bdde853ab0" valueTypeId="14f36078-f34a-4011-bba5-34b01309d367"/>
+    <recordType typeId="d335e99f-c47a-4da1-85b1-ed7d8c214754" valueTypeId="934cf49c-61bd-4d16-9a12-88294a92560f"/>
+    <recordManagerType typeId="c6143e34-0f47-4cf0-84c8-0b864573fdf5" valueTypeId="d803aed8-eabc-4dab-8f67-13b7551cd754"/>
+  </producedTypes>
+  <name>MultiPort_ДанныеВФорматеТранспорта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Данные в формате транспорта (MultiPort)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.MultiPort_ДанныеВФорматеТранспорта.Form.ФормаЗаписи</defaultRecordForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Данные в формате транспорта (MultiPort)</value>
+  </listPresentation>
+  <resources uuid="ec0bd520-04db-4ed5-9959-a712fd98b46d">
+    <name>ДанныеОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Данные обмена</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <resources uuid="9a8490c5-ae05-486d-bd87-7554336740a8">
+    <name>ОписаниеФормата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание формата</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Может быть использовано как информация для передачи во внешние системы</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <dimensions uuid="541d6611-9732-4bc3-b17b-eaaa871303c2">
+    <name>Сообщение</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сообщение</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_СообщенияИсходящие</types>
+      <types>CatalogRef.MultiPort_СообщенияВходящие</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <denyIncompleteValues>true</denyIncompleteValues>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <master>true</master>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="e41d6414-b608-44e8-a914-c89a1ffb01d5">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

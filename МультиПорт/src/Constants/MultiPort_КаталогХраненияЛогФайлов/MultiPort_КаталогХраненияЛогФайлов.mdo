@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a062d937-01a0-40c4-bc83-8ba38d91cf2d">
+  <producedTypes>
+    <managerType typeId="d23f7ec8-9e96-44db-9dc0-afdebfc19372" valueTypeId="10f536a6-d8de-4f84-8591-c77431f4d9e3"/>
+    <valueManagerType typeId="dd923994-5584-457a-b878-4828084d9c85" valueTypeId="788a78a5-c7f5-4ad2-b485-db6e7d05947d"/>
+    <valueKeyType typeId="61b44fd8-5816-4c0f-bd6f-c07226f95c6f" valueTypeId="9acfd67f-ea51-4126-b9cd-7103708ce3e6"/>
+  </producedTypes>
+  <name>MultiPort_КаталогХраненияЛогФайлов</name>
+  <synonym>
+    <key>ru</key>
+    <value>Каталог хранения лог файлов (MultiPort)</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>500</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

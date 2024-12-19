@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2b0ca943-5281-4e5f-bdc8-0e52814ac782">
+  <name>ОбъектыКСравнению</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты к сравнению</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Объекты по которым предполагается выополнять ручное сравнение и объединение</value>
+  </explanation>
+  <subsystems>ОбъектыКСравнению</subsystems>
+  <subsystems>ТиповыеОбъекты</subsystems>
+  <parentSubsystem>Subsystem.MultiPort</parentSubsystem>
+</mdclass:Subsystem>

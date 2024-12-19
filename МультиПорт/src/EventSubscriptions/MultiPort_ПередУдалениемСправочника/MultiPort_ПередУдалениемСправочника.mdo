@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="88fbc7de-dece-4116-bb38-3d914d6c5373">
+  <name>MultiPort_ПередУдалениемСправочника</name>
+  <synonym>
+    <key>ru</key>
+    <value>MultiPort перед удалением справочника</value>
+  </synonym>
+  <source>
+    <types>CatalogObject</types>
+  </source>
+  <event>BeforeDelete</event>
+  <handler>CommonModule.MultiPort_Обмен.ПередУдалениемСправочника</handler>
+</mdclass:EventSubscription>

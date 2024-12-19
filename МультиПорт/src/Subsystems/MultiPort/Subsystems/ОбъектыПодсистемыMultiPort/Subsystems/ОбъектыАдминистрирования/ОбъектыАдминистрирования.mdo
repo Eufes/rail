@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="124286e5-363f-4eee-b2b6-bf6a12cb52f9">
+  <name>ОбъектыАдминистрирования</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты администрирования</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Основные объекты адаптера - справочники и регистры</value>
+  </explanation>
+  <content>InformationRegister.MultiPort_ИдентификаторыВнешнихСистем</content>
+  <content>DataProcessor.MultiPort_Администрирование</content>
+  <content>Catalog.MultiPort_ТипИсходящегоСообщения</content>
+  <content>InformationRegister.MultiPort_ОчередьИсходящих</content>
+  <content>Catalog.MultiPort_СообщенияИсходящие</content>
+  <content>InformationRegister.MultiPort_ДанныеВФорматеТранспорта</content>
+  <content>InformationRegister.MultiPort_ИспользуемыеНастройкиДляСообщений</content>
+  <content>Catalog.MultiPort_НастройкиИсходящихСообщений</content>
+  <content>Catalog.MultiPort_КонструкторИсходящихXML</content>
+  <content>Catalog.MultiPort_СхемыXSD</content>
+  <content>Catalog.MultiPort_ТипВходящегоСообщения</content>
+  <content>Catalog.MultiPort_ИнтеграционныеПроцессы</content>
+  <content>Catalog.MultiPort_ПодключенияКВнешнимСистемам</content>
+  <content>Constant.MultiPort_КаталогХраненияЛогФайлов</content>
+  <content>Constant.MultiPort_ИмяИБДляРаботыРеглЗаданий</content>
+  <content>Catalog.MultiPort_СообщенияВходящие</content>
+  <content>InformationRegister.MultiPort_ОчередьВходящих</content>
+  <content>InformationRegister.MultiPort_ПодпискиОбмена</content>
+  <content>Catalog.MultiPort_НастройкиВходящихСообщений</content>
+  <parentSubsystem>Subsystem.MultiPort.Subsystem.ОбъектыПодсистемыMultiPort</parentSubsystem>
+</mdclass:Subsystem>

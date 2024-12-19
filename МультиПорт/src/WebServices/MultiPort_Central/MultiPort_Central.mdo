@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:WebService xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="002e1a16-26a1-4503-9215-9244f4a7c75a">
+  <name>MultiPort_Central</name>
+  <synonym>
+    <key>ru</key>
+    <value>MultiPort adapter central</value>
+  </synonym>
+  <namespace>http://ws.exchange.multi_port</namespace>
+  <xdtoPackages xsi:type="core:StringValue">
+    <value>http://v8.1c.ru/8.1/data/core</value>
+  </xdtoPackages>
+  <descriptorFileName>WsExchangeMultiPort.1cws</descriptorFileName>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <operations uuid="d7413435-e442-4560-aa22-cadec73115a4">
+    <name>CheckConnect</name>
+    <synonym>
+      <key>ru</key>
+      <value>Check connect</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>CheckConnect</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+  </operations>
+  <operations uuid="12e5c18f-c547-42cc-8df8-ba98700fa42d">
+    <name>Interaction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Interaction</value>
+    </synonym>
+    <xdtoReturningValueType>
+      <name>string</name>
+      <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+    </xdtoReturningValueType>
+    <procedureName>Interaction</procedureName>
+    <dataLockControlMode>Managed</dataLockControlMode>
+    <parameters uuid="d2f106bf-ccf4-44dc-88ba-712c4349e99b">
+      <name>MsgID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Message ID</value>
+      </synonym>
+      <comment>Идентификатор входящего сообщения (исходящего от внешней системы)</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="971b9117-7ed2-492f-8286-3fb3cb574606">
+      <name>MsgType</name>
+      <synonym>
+        <key>ru</key>
+        <value>Message type</value>
+      </synonym>
+      <comment>Мнемокод типа входящего сообщения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="77bd6a05-84f7-4ad5-8859-3698cc3fc1f0">
+      <name>BodyType</name>
+      <synonym>
+        <key>ru</key>
+        <value>Body type</value>
+      </synonym>
+      <comment>Тип тела запроса (по умолчанию - строка). Используется для определения типа содержимого тела (текст или двоичные данные)</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="a62d6a17-5b0b-4a29-b2ad-1c0a6f62b164">
+      <name>MsgBody</name>
+      <synonym>
+        <key>ru</key>
+        <value>Msg body</value>
+      </synonym>
+      <comment>Тело (содержимое) входящего сообщения</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+      <nillable>true</nillable>
+    </parameters>
+    <parameters uuid="e690c344-b924-4ac6-8b06-d755ef17d3e6">
+      <name>ExternalSystemID</name>
+      <synonym>
+        <key>ru</key>
+        <value>External system ID</value>
+      </synonym>
+      <comment>Используется для быстрого определения соответствующей внешней системы в текущей базе</comment>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+    <parameters uuid="c92e4237-e91e-4b6f-affa-e0660b8a6f71">
+      <name>IntegrationProcessID</name>
+      <synonym>
+        <key>ru</key>
+        <value>Integration process ID</value>
+      </synonym>
+      <xdtoValueType>
+        <name>string</name>
+        <nsUri>http://www.w3.org/2001/XMLSchema</nsUri>
+      </xdtoValueType>
+    </parameters>
+  </operations>
+</mdclass:WebService>

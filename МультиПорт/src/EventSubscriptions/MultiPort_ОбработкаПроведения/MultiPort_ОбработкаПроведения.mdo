@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f5cdc1bb-343b-4b61-9409-93650e591326">
+  <name>MultiPort_ОбработкаПроведения</name>
+  <synonym>
+    <key>ru</key>
+    <value>Обработка проведения (MultiPort)</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>Posting</event>
+  <handler>CommonModule.MultiPort_Обмен.ОбработкаПроведенияДокумента</handler>
+</mdclass:EventSubscription>

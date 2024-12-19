@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="1992dbac-4017-4cc2-a63c-f3c37b30fd7a">
+  <producedTypes>
+    <refType typeId="c7e1445b-7985-433e-a952-f93555b24915" valueTypeId="b158d4a7-5c0f-4429-ab6c-259b54e5c1f3"/>
+    <listType typeId="df870d7c-4d58-422f-aa76-32f201bb6f51" valueTypeId="9e914110-df4d-412b-9271-29c1f6cfbc9d"/>
+    <managerType typeId="65a26470-3a65-44e1-bb36-877627895772" valueTypeId="b143343d-3e02-4c4a-b5bb-af4b4d764875"/>
+  </producedTypes>
+  <name>MultiPort_УровниСобытийПротокола</name>
+  <synonym>
+    <key>ru</key>
+    <value>Уровни событий протокола (MultiPort)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="b0b7b030-25bb-4f23-9a31-f1f54f92b40d">
+    <name>Информация</name>
+    <synonym>
+      <key>ru</key>
+      <value>Информация</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="f036cdda-2f44-48f8-801a-53675d77e188">
+    <name>Ошибка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ошибка</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

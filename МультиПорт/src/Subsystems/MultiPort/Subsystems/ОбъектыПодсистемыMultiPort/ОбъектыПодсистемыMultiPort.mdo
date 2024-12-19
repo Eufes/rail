@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b1792c7b-1460-4416-acb5-a1f612a4b73d">
+  <name>ОбъектыПодсистемыMultiPort</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты подсистемы Multi Port</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Служит для агрегации только объектов адаптера. Также используется удобного выбора объектов при сравнении и объединении.</value>
+  </explanation>
+  <subsystems>ОбъектыВнутренние</subsystems>
+  <subsystems>ОбъектыАдминистрирования</subsystems>
+  <subsystems>Аудит</subsystems>
+  <subsystems>ВерсионированиеНастроек</subsystems>
+  <parentSubsystem>Subsystem.MultiPort</parentSubsystem>
+</mdclass:Subsystem>

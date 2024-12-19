@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonModule xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="6e2802c2-d84f-4426-be4f-c0c6cc67e0a3">
+  <name>MultiPort_Привилегированный</name>
+  <synonym>
+    <key>ru</key>
+    <value>MultiPort привилегированный</value>
+  </synonym>
+  <server>true</server>
+  <privileged>true</privileged>
+</mdclass:CommonModule>

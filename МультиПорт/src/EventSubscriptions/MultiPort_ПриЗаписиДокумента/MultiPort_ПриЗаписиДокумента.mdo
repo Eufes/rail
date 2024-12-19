@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="8258d9c0-1a0c-41bf-b7ef-2cc280e09e62">
+  <name>MultiPort_ПриЗаписиДокумента</name>
+  <synonym>
+    <key>ru</key>
+    <value>При записи документа (MultiPort)</value>
+  </synonym>
+  <source>
+    <types>DocumentObject</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.MultiPort_Обмен.ПриЗаписиДокумента</handler>
+</mdclass:EventSubscription>

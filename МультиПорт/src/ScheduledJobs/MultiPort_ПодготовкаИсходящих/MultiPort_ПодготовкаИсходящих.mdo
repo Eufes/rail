@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ScheduledJob xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="03cada89-7b55-4da5-8cce-629c69e98cf1">
+  <name>MultiPort_ПодготовкаИсходящих</name>
+  <synonym>
+    <key>ru</key>
+    <value>(MultiPort) Подготовка исходящих</value>
+  </synonym>
+  <methodName>CommonModule.MultiPort_Обмен.ПодготовкаИсходящихСообщенийРеглЗаданием</methodName>
+  <restartCountOnFailure>3</restartCountOnFailure>
+  <restartIntervalOnFailure>10</restartIntervalOnFailure>
+</mdclass:ScheduledJob>

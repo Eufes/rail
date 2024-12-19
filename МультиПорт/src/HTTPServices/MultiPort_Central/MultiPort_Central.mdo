@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:HTTPService xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="690508d5-363a-4fe6-ba16-201e56540523">
+  <name>MultiPort_Central</name>
+  <synonym>
+    <key>ru</key>
+    <value>MultiPort adapter central</value>
+  </synonym>
+  <rootURL>multi_port_adapter</rootURL>
+  <reuseSessions>AutoUse</reuseSessions>
+  <sessionMaxAge>20</sessionMaxAge>
+  <urlTemplates uuid="a91561a4-33c2-4d51-ac2c-8bcfaacf232e">
+    <name>CheckConnect</name>
+    <synonym>
+      <key>ru</key>
+      <value>Check connect</value>
+    </synonym>
+    <template>/CheckConnect</template>
+    <methods uuid="38a65a35-96c0-425e-96db-9154cad6e19e">
+      <name>CheckConnectGET</name>
+      <synonym>
+        <key>ru</key>
+        <value>Check connect GET</value>
+      </synonym>
+      <handler>CheckConnect</handler>
+    </methods>
+  </urlTemplates>
+  <urlTemplates uuid="9bc4b1e1-e20b-4514-9ecc-adc213838669">
+    <name>Interaction</name>
+    <synonym>
+      <key>ru</key>
+      <value>Interaction</value>
+    </synonym>
+    <template>/*</template>
+    <methods uuid="2ca965de-689b-47ef-8958-c73766af0b50">
+      <name>InteractionPOST</name>
+      <synonym>
+        <key>ru</key>
+        <value>Interaction POST</value>
+      </synonym>
+      <httpMethod>POST</httpMethod>
+      <handler>InteractionPOST</handler>
+    </methods>
+  </urlTemplates>
+</mdclass:HTTPService>

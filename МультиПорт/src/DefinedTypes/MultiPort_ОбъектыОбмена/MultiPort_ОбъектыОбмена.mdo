@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DefinedType xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bb67e2fe-08ee-4a62-9e3b-af5e4e2eca22">
+  <producedTypes>
+    <containerType typeId="98867423-8b83-42df-b1d9-7a30451452ec" valueTypeId="3c30de8b-b3cf-49d5-bfa7-b551bc1312e2"/>
+  </producedTypes>
+  <name>MultiPort_ОбъектыОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>MultiPort объекты обмена</value>
+  </synonym>
+  <type>
+    <types>DocumentRef.ТестовыйДокумент</types>
+    <types>CatalogRef.Пользователи</types>
+  </type>
+</mdclass:DefinedType>

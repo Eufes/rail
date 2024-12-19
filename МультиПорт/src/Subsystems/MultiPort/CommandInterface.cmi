@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cmi:CommandInterface xmlns:cmi="http://g5.1c.ru/v8/dt/cmi">
+  <commandsVisibility>
+    <visibilityFragments>
+      <command>DataProcessor.MultiPort_Администрирование.StandardCommand.Open</command>
+      <visible/>
+    </visibilityFragments>
+  </commandsVisibility>
+  <commandsOrder>
+    <orderFragments>
+      <group>NavigationPanelImportant</group>
+      <commands>DataProcessor.MultiPort_Администрирование.Command.УправлениеАдаптером</commands>
+    </orderFragments>
+  </commandsOrder>
+  <subsystemsOrder>
+    <subsystems>Subsystem.MultiPort.Subsystem.ОбъектыПодсистемыMultiPort</subsystems>
+    <subsystems>Subsystem.MultiPort.Subsystem.ОбъектыДополнительные</subsystems>
+  </subsystemsOrder>
+</cmi:CommandInterface>

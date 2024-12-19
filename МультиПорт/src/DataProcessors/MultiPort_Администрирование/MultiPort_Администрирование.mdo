@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:DataProcessor xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="965ff8f3-27f7-46db-b734-745ad2a4594c">
+  <producedTypes>
+    <objectType typeId="d701eb5a-f716-4a00-8a7c-49719ae20d52" valueTypeId="39391aa6-fac4-4b48-b631-2637fe2451d0"/>
+    <managerType typeId="829be2ef-5c86-4750-9a5b-d48ffc755380" valueTypeId="59350e6c-d850-4406-bb7f-0ab9c8f43ad2"/>
+  </producedTypes>
+  <name>MultiPort_Администрирование</name>
+  <synonym>
+    <key>ru</key>
+    <value>Администрирование (MultiPort)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <defaultForm>DataProcessor.MultiPort_Администрирование.Form.Форма</defaultForm>
+  <explanation>
+    <key>ru</key>
+    <value>Интерфейс администрирования</value>
+  </explanation>
+  <forms uuid="6a064e40-5d39-4553-861c-ffdc6b5e0dd3">
+    <name>Форма</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="3abf88d3-9e46-4426-9f6c-2a31719b671c">
+    <name>ВыборИзЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Выбор из запроса</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="45ac40b4-9f8d-42f4-a268-19df686e5bf1">
+    <name>ФормаДоступностиРеглЗаданий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма доступности регл заданий</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="4055278a-ad86-4125-a786-7fc01e5b9906">
+    <name>ОтчетПоИнтеграционнымВзаимодействиям</name>
+    <synonym>
+      <key>ru</key>
+      <value>Отчет по интеграционным взаимодействиям</value>
+    </synonym>
+    <templateType>DataCompositionSchema</templateType>
+  </templates>
+  <commands uuid="06004c7d-e07b-401a-82a2-bd55fb0dc482">
+    <name>УправлениеАдаптером</name>
+    <synonym>
+      <key>ru</key>
+      <value>Консоль управления</value>
+    </synonym>
+    <group>NavigationPanelImportant</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+  <commands uuid="59546d80-a479-4b4f-a881-0bf41f8ede05">
+    <name>БлокировкаОбмена</name>
+    <synonym>
+      <key>ru</key>
+      <value>Блокировка обмена через адаптер</value>
+    </synonym>
+    <group>CommandGroup.MultiPort_Управление</group>
+    <commandParameterType/>
+    <representation>Auto</representation>
+  </commands>
+</mdclass:DataProcessor>

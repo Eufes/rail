@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Constant xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="2ed1140e-f264-478d-b6f0-49c823aa9f56">
+  <producedTypes>
+    <managerType typeId="8dd34749-bb48-4d52-aa5c-e0ae64b8f3fb" valueTypeId="c2373118-4273-4dad-821c-b99394c0c486"/>
+    <valueManagerType typeId="699e7045-d2a4-47e8-9f2d-a767dd695682" valueTypeId="55b3a619-1778-4a36-9639-75db0d112ac4"/>
+    <valueKeyType typeId="f198588a-792f-4751-adf0-584fe527921c" valueTypeId="da327dbd-abf3-4129-91ad-d34379191754"/>
+  </producedTypes>
+  <name>MultiPort_ИмяИБДляРаботыРеглЗаданий</name>
+  <synonym>
+    <key>ru</key>
+    <value>Имя ИБ для проверки разрешения работы регл заданий (MultiPort)</value>
+  </synonym>
+  <type>
+    <types>String</types>
+    <stringQualifiers>
+      <length>200</length>
+    </stringQualifiers>
+  </type>
+  <useStandardCommands>true</useStandardCommands>
+  <explanation>
+    <key>ru</key>
+    <value>При старте регламентных заданий адаптера будет проверяться имя текущей базы и значением в константе. Если значения не будут совпадать, то регламентные задания выполняться не будут.</value>
+  </explanation>
+  <minValue xsi:type="core:UndefinedValue"/>
+  <maxValue xsi:type="core:UndefinedValue"/>
+  <dataLockControlMode>Managed</dataLockControlMode>
+</mdclass:Constant>

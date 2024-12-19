@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="b37ed1da-ce0d-4cad-a81b-a5d09cbc31ca">
+  <name>MultiPort_ПодключениеЖелтый</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подключение (желтый)</value>
+  </synonym>
+</mdclass:CommonPicture>

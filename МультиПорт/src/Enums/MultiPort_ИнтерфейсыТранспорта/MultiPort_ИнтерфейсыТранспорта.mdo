@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="63b4f97b-0031-4b5a-9a81-9269642b1ac3">
+  <producedTypes>
+    <refType typeId="a5f3195b-40e5-4320-a5bc-5808692e30cb" valueTypeId="245e4a11-5f7a-488b-a1f3-18d3362077d3"/>
+    <listType typeId="4ee8094d-03f7-460f-9c3c-243e2bc57c1d" valueTypeId="73b02b27-106f-4d27-8ea0-f38665f53648"/>
+    <managerType typeId="90d2e91e-64d3-4a34-934d-3aa69b2d9909" valueTypeId="5d21e9f3-211e-43d9-8768-965eaaefbc5e"/>
+  </producedTypes>
+  <name>MultiPort_ИнтерфейсыТранспорта</name>
+  <synonym>
+    <key>ru</key>
+    <value>Интерфейсы транспорта (MultiPort)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="46be09cc-7465-4a50-9561-d2a91a93adf5">
+    <name>WebService</name>
+    <synonym>
+      <key>ru</key>
+      <value>Web service</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0fa493c3-a3c4-47d2-a524-a29398b353cb">
+    <name>HttpService</name>
+    <synonym>
+      <key>ru</key>
+      <value>Http service</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="95e46cfb-0c61-45dd-a285-4b3f65608bd5">
+    <name>COM</name>
+    <synonym>
+      <key>ru</key>
+      <value>COM</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="b5403a58-605c-47d9-b58e-04f5b7a7ce34">
+    <name>ExternalSystem</name>
+    <synonym>
+      <key>ru</key>
+      <value>External system</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

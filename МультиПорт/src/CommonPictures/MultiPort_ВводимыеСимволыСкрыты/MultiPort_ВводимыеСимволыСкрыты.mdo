@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="3c879df7-4651-42df-a9ec-02a66ad3742f">
+  <name>MultiPort_ВводимыеСимволыСкрыты</name>
+  <synonym>
+    <key>ru</key>
+    <value>Вводимые символы скрыты</value>
+  </synonym>
+</mdclass:CommonPicture>

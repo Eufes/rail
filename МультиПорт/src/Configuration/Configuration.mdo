@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Configuration xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f65e76a7-5758-4e39-bf7a-414c6ba23ffa">
+  <name>Проводник</name>
+  <synonym>
+    <key>ru</key>
+    <value>Мульти порт</value>
+  </synonym>
+  <containedObjects classId="9cd510cd-abfc-11d4-9434-004095e12fc7" objectId="bebf0baa-039b-47af-ae81-5b132103d17b"/>
+  <containedObjects classId="9fcd25a0-4822-11d4-9414-008048da11f9" objectId="01d85547-44bd-4433-a894-59745a7cfa6f"/>
+  <containedObjects classId="e3687481-0a87-462c-a166-9f34594f9bba" objectId="05e48eb9-f855-482c-9218-26e2d70fb434"/>
+  <containedObjects classId="9de14907-ec23-4a07-96f0-85521cb6b53b" objectId="ede34163-e692-46a2-8a54-050e3c800378"/>
+  <containedObjects classId="51f2d5d8-ea4d-4064-8892-82951750031e" objectId="d8c9ebd1-d14b-42a1-89ec-f356f6ffaa5f"/>
+  <containedObjects classId="e68182ea-4237-4383-967f-90c1e3370bc7" objectId="d52f684e-928c-4dd2-b1ef-544a4e4bc325"/>
+  <containedObjects classId="fb282519-d103-4dd3-bc12-cb271d631dfc" objectId="e2d92e21-e400-4e5f-963f-7818d13dfa3d"/>
+  <configurationExtensionCompatibilityMode>8.3.24</configurationExtensionCompatibilityMode>
+  <defaultRunMode>ManagedApplication</defaultRunMode>
+  <usePurposes>PersonalComputer</usePurposes>
+  <scriptVariant>Russian</scriptVariant>
+  <defaultRoles>Role.MultiPort_Администратор</defaultRoles>
+  <vendor>Eufes</vendor>
+  <version>2021.05.14.11</version>
+  <usedMobileApplicationFunctionalities>
+    <functionality>
+      <use>true</use>
+    </functionality>
+    <functionality>
+      <functionality>OSBackup</functionality>
+      <use>true</use>
+    </functionality>
+  </usedMobileApplicationFunctionalities>
+  <defaultLanguage>Language.Русский</defaultLanguage>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <objectAutonumerationMode>NotAutoFree</objectAutonumerationMode>
+  <modalityUseMode>DontUse</modalityUseMode>
+  <synchronousPlatformExtensionAndAddInCallUseMode>DontUse</synchronousPlatformExtensionAndAddInCallUseMode>
+  <compatibilityMode>8.3.17</compatibilityMode>
+  <languages uuid="74879178-85c4-4281-8b1a-9322f4fffa85">
+    <name>Русский</name>
+    <synonym>
+      <key>ru</key>
+      <value>Русский</value>
+    </synonym>
+    <languageCode>ru</languageCode>
+  </languages>
+  <subsystems>Subsystem.MultiPort</subsystems>
+  <commonPictures>CommonPicture.MultiPort_ВводимыеСимволыВидны</commonPictures>
+  <commonPictures>CommonPicture.MultiPort_ВводимыеСимволыСкрыты</commonPictures>
+  <commonPictures>CommonPicture.MultiPort_Подсистема</commonPictures>
+  <commonPictures>CommonPicture.MultiPort_ПодключениеЖелтый</commonPictures>
+  <commonPictures>CommonPicture.MultiPort_ВниманиеКрасный</commonPictures>
+  <commonPictures>CommonPicture.MultiPort_КругКрасный</commonPictures>
+  <commonPictures>CommonPicture.MultiPort_КругЗеленый</commonPictures>
+  <roles>Role.ПолныеПрава</roles>
+  <roles>Role.MultiPort_Администратор</roles>
+  <roles>Role.MultiPort_Чтение</roles>
+  <roles>Role.MultiPort_ИспользованиеОбмена</roles>
+  <roles>Role.MultiPort_Просмотр</roles>
+  <commonModules>CommonModule.MultiPort_ВызовСервера</commonModules>
+  <commonModules>CommonModule.MultiPort_КонструкторСообщенийXML</commonModules>
+  <commonModules>CommonModule.MultiPort_Обмен</commonModules>
+  <commonModules>CommonModule.MultiPort_ОбщегоНазначения</commonModules>
+  <commonModules>CommonModule.MultiPort_Переопределяемый</commonModules>
+  <commonModules>CommonModule.MultiPort_ПовтИсп</commonModules>
+  <commonModules>CommonModule.MultiPort_НаВремяВызоваПовтИсп</commonModules>
+  <commonModules>CommonModule.MultiPort_Привилегированный</commonModules>
+  <commonModules>CommonModule.MultiPort_ШлюзБСПКлиентСервер</commonModules>
+  <commonModules>CommonModule.MultiPort_ШлюзБСПСервер</commonModules>
+  <exchangePlans>ExchangePlan.MultiPort_ВнешниеСистемы</exchangePlans>
+  <webServices>WebService.MultiPort_Central</webServices>
+  <httpServices>HTTPService.MultiPort_Central</httpServices>
+  <eventSubscriptions>EventSubscription.MultiPort_ОбработкаПроведения</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.MultiPort_ПередУдалениемДокумента</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.MultiPort_ПередУдалениемСправочника</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.MultiPort_ПриЗаписиДокумента</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.MultiPort_ПриЗаписиСправочника</eventSubscriptions>
+  <eventSubscriptions>EventSubscription.MultiPort_ПриЗаписиРегистраСведений</eventSubscriptions>
+  <scheduledJobs>ScheduledJob.MultiPort_ОбработкаВходящих</scheduledJobs>
+  <scheduledJobs>ScheduledJob.MultiPort_ОтправкаИсходящих</scheduledJobs>
+  <scheduledJobs>ScheduledJob.MultiPort_ПодготовкаИсходящих</scheduledJobs>
+  <scheduledJobs>ScheduledJob.MultiPort_УдалениеНеактуальныхДанных</scheduledJobs>
+  <definedTypes>DefinedType.MultiPort_ОбъектыОбмена</definedTypes>
+  <commonCommands>CommonCommand.MultiPort_ВнешниеСистемы</commonCommands>
+  <commonCommands>CommonCommand.MultiPort_ПараметрыПодключенияКВнешнимСистемам</commonCommands>
+  <commandGroups>CommandGroup.MultiPort_Управление</commandGroups>
+  <constants>Constant.MultiPort_ИмяИБДляРаботыРеглЗаданий</constants>
+  <constants>Constant.MultiPort_КаталогХраненияЛогФайлов</constants>
+  <catalogs>Catalog.ДополнительныеОтчетыИОбработки</catalogs>
+  <catalogs>Catalog.КонтактныеЛица</catalogs>
+  <catalogs>Catalog.Пользователи</catalogs>
+  <catalogs>Catalog.УчетныеЗаписиЭлектроннойПочты</catalogs>
+  <catalogs>Catalog.MultiPort_ИнтеграционныеПроцессы</catalogs>
+  <catalogs>Catalog.MultiPort_КонструкторИсходящихXML</catalogs>
+  <catalogs>Catalog.MultiPort_НастройкиВходящихСообщений</catalogs>
+  <catalogs>Catalog.MultiPort_НастройкиИсходящихСообщений</catalogs>
+  <catalogs>Catalog.MultiPort_ПодключенияКВнешнимСистемам</catalogs>
+  <catalogs>Catalog.MultiPort_СообщенияВходящие</catalogs>
+  <catalogs>Catalog.MultiPort_СообщенияИсходящие</catalogs>
+  <catalogs>Catalog.MultiPort_СхемыXSD</catalogs>
+  <catalogs>Catalog.MultiPort_ТипВходящегоСообщения</catalogs>
+  <catalogs>Catalog.MultiPort_ТипИсходящегоСообщения</catalogs>
+  <documents>Document.ТестовыйДокумент</documents>
+  <enums>Enum.MultiPort_ВариантыПроизвольногоОбработчика</enums>
+  <enums>Enum.MultiPort_ИнтерфейсыТранспорта</enums>
+  <enums>Enum.MultiPort_СостоянияВходящих</enums>
+  <enums>Enum.MultiPort_СостоянияИсходящих</enums>
+  <enums>Enum.MultiPort_СпособыПреобразованияСообщений</enums>
+  <enums>Enum.MultiPort_УровниСобытийПротокола</enums>
+  <dataProcessors>DataProcessor.MultiPort_Администрирование</dataProcessors>
+  <informationRegisters>InformationRegister.MultiPort_ИдентификаторыВнешнихСистем</informationRegisters>
+  <informationRegisters>InformationRegister.MultiPort_ДанныеВФорматеТранспорта</informationRegisters>
+  <informationRegisters>InformationRegister.MultiPort_ИспользуемыеНастройкиДляСообщений</informationRegisters>
+  <informationRegisters>InformationRegister.MultiPort_ОчередьВходящих</informationRegisters>
+  <informationRegisters>InformationRegister.MultiPort_ОчередьИсходящих</informationRegisters>
+  <informationRegisters>InformationRegister.MultiPort_ПодпискиОбмена</informationRegisters>
+  <informationRegisters>InformationRegister.MultiPort_ПротоколОбмена</informationRegisters>
+  <informationRegisters>InformationRegister.MultiPort_СостояниеОбъектовОбмена</informationRegisters>
+  <informationRegisters>InformationRegister.СоответствияОбъектовИнформационныхБаз</informationRegisters>
+</mdclass:Configuration>
