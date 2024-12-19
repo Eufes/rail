@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="ae205c53-60a8-4508-86e7-eb1ce9e10ba4">
+  <producedTypes>
+    <objectType typeId="bc3f5802-96ef-4116-a88f-64e65254f4e6" valueTypeId="65d950f1-ad33-4238-bc13-803f12e42568"/>
+    <refType typeId="f61cd5fe-15af-4703-9f56-0ed81f236096" valueTypeId="23e60cde-852f-4024-9de8-ad1ad220c1f2"/>
+    <selectionType typeId="6e58c8ec-fdc9-4018-b80c-c090946302bf" valueTypeId="a523d81b-1c1c-4367-8c90-c7ca9e4a6338"/>
+    <listType typeId="ebaf2c75-1198-4064-994d-e73efffd8ae6" valueTypeId="5ef5bdad-d149-4506-8745-f544dd9c8c8a"/>
+    <managerType typeId="dd55f43c-d68c-4151-813b-758e0403c1e9" valueTypeId="dea8ba71-346a-47d0-942f-e8c40ab5a9d3"/>
+  </producedTypes>
+  <name>MultiPort_НастройкиИсходящихСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Настройки исходящих сообщений (MultiPort)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.MultiPort_НастройкиИсходящихСообщений.StandardAttribute.Description</inputByString>
+  <inputByString>Catalog.MultiPort_НастройкиИсходящихСообщений.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>PredefinedDataName</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Predefined</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>IsFolder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Owner</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Parent</name>
+    <fillFromFillingValue>true</fillFromFillingValue>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Настройки исходящих сообщений (MultiPort)</value>
+  </objectPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <descriptionLength>150</descriptionLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>Catalog.MultiPort_НастройкиИсходящихСообщений.Form.ФормаЭлемента</defaultObjectForm>
+  <attributes uuid="53075af8-7f59-444b-b096-d917d64b9d39">
+    <name>СпособФормированияСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Способ формирования сообщений</value>
+    </synonym>
+    <type>
+      <types>EnumRef.MultiPort_СпособыПреобразованияСообщений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="cd4564aa-f6f7-4cc4-8c49-85bf9b21512f">
+    <name>ОбработкаФормированияИсходящего</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка формирования исходящего</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДополнительныеОтчетыИОбработки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="190d8390-1078-4483-ac3f-217e9534f5ad">
+    <name>ВариантПроизвольногоОбработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант произвольного обработчика</value>
+    </synonym>
+    <type>
+      <types>EnumRef.MultiPort_ВариантыПроизвольногоОбработчика</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3b460cdd-e756-4282-8756-6f907b369da8">
+    <name>ИмяВстроенногоОбработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя встроенного обработчика</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя обработки в дереве конфигурации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8c58173b-0e87-4fad-8eb7-9a5967c6557d">
+    <name>КодФормированияСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Код формирования сообщения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Произвольно задаваемый код для подготовки данных к отправке</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bcb7cd72-c031-463b-9f66-9dcffc4ee050">
+    <name>ИспользоватьОбработчикПередОтправкой</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать обработчик перед отправкой</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="4c9e8c6f-22fa-4c9a-ad87-b0b539f8cc4a">
+    <name>ИспользоватьОбработчикПослеОтправки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать обработчик после отправки</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="465c4e3a-f39a-4bab-b94e-efcd8df3bb7e">
+    <name>ВариантОбработчикаПриОтправке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Вариант обработчика</value>
+    </synonym>
+    <type>
+      <types>EnumRef.MultiPort_ВариантыПроизвольногоОбработчика</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="d300970a-b9b8-413c-b903-8174b300c347">
+    <name>ИмяВстроенногоОбработчикаПриОтправке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя встроенного обработчика</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Имя обработки в дереве конфигурации</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="e2a26d55-0e52-4265-aea9-3b408b48927d">
+    <name>ОбработкаПриОтправке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработка при отправке</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.ДополнительныеОтчетыИОбработки</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3b817e9c-fab8-4209-9de6-d9ecfddd8d25">
+    <name>ИспользоватьТранспортОбработчика</name>
+    <synonym>
+      <key>ru</key>
+      <value>Использовать транспорт обработчика</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Будет использован модуль обработки, в которой задан произвольный метод передачи данных во внешнюю систему.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a69c57fb-58eb-4dbd-a841-4f5822d1cd85">
+    <name>КонструкторСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктор сообщения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_КонструкторИсходящихXML</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2bd07ef1-0d70-4384-8294-c9585917ecbe">
+    <name>ПравилаКонвертации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правила конвертации</value>
+    </synonym>
+    <type>
+      <types>ValueStorage</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="87ae2379-fa86-4e20-b633-c3e026ced0f9">
+    <name>ОписаниеНастройки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Описание настройки</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="10de9366-14d3-4048-b3e0-beaef3b8b35b">
+    <name>СинхронныйРежим</name>
+    <synonym>
+      <key>ru</key>
+      <value>Синхронный режим</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Признак определяет поведение системы с сообщением: отправка выполняется сразу или через очередь исходящих</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="51ad131b-4608-422d-9310-84f8395d7142">
+    <name>ИнтерфейсТранспорта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Интерфейс транспорта</value>
+    </synonym>
+    <type>
+      <types>EnumRef.MultiPort_ИнтерфейсыТранспорта</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5a035a7d-6917-4909-9d24-0144d529eb74">
+    <name>ДругиеПараметрыПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Другие параметры подключения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_ПодключенияКВнешнимСистемам</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Указываются для возможности использовать другие параметры подключения к внешней системе для конкретного типа сообщения</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="8f6efcb2-8697-4cf0-967a-6dfd1a1ca495">
+    <name>СжиматьВZip</name>
+    <synonym>
+      <key>ru</key>
+      <value>Сжимать в zip</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="2812010b-d964-488a-a0dc-5c1361755086">
+    <name>ДоступноПопытокОбработки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Доступно попыток обработки</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество попыток обработки сообщения при ошибках. По превышению попыток в очереди снимается признак доступности обработки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="a80e1898-ded6-43b7-b95f-b582649e69a8">
+    <name>ОбрабатыватьРезультатЗапроса</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обрабатывать результат запроса</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>По указанному типу входящего сообщения после отпрвки будет выполнена обработка результата, который вернула внешняя система.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f635fbed-75fd-4621-8449-c475ef63a4af">
+    <name>ТипВходящегоДляОбработкиРезультата</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип входящего для обработки результата</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_ТипВходящегоСообщения</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Тип входящего сообщения, по которому будет выполнена обработка результата исходящего запроса.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="c4601bad-14c4-4443-a0fc-b4ae5caf8696">
+    <name>ВозвращатьОтветВИнтерфейс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Возвращать ответ в интерфейс</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Используется в синхронном режиме, когда инициализация процесса производиться через сторонний интерфейс и необходимо вернуть в него ответ от внешней системы для непосредственного использования в нем (или обработки) ответа.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <tabularSections uuid="81aaa177-d23f-4ec8-b138-36a972adba81">
+    <producedTypes>
+      <objectType typeId="931132a2-0d89-4c4b-b52b-b5c070b97251" valueTypeId="7a8702a3-835e-4ef2-8e46-67d5f9e0422b"/>
+      <rowType typeId="b253c12b-28db-41b0-80dc-6fd8f5e4f2f8" valueTypeId="cbb9bdf1-9e02-4145-945a-661250a477fe"/>
+    </producedTypes>
+    <name>ДополнительныеПараметры</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные параметры</value>
+    </synonym>
+    <standardAttributes>
+      <dataHistory>Use</dataHistory>
+      <name>LineNumber</name>
+      <fillValue xsi:type="core:UndefinedValue"/>
+      <fullTextSearch>Use</fullTextSearch>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+    </standardAttributes>
+    <attributes uuid="f0e655e1-4d05-4e57-a814-e58039553e7e">
+      <name>ИмяПараметра</name>
+      <synonym>
+        <key>ru</key>
+        <value>Имя параметра</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>150</length>
+        </stringQualifiers>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="8873711e-ce53-4d3c-b017-e6617f83f0a2">
+      <name>ЗначениеПараметра</name>
+      <synonym>
+        <key>ru</key>
+        <value>Значение параметра</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+        <types>String</types>
+        <types>Date</types>
+        <types>Number</types>
+        <types>AnyRef</types>
+        <numberQualifiers>
+          <precision>15</precision>
+        </numberQualifiers>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+        <dateQualifiers/>
+      </type>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="91e1b0f3-bdbd-4b78-b2ce-bb517925094a">
+      <name>ДопЗначениеСоответствия</name>
+      <synonym>
+        <key>ru</key>
+        <value>Доп значение соответствия</value>
+      </synonym>
+      <type>
+        <types>Boolean</types>
+        <types>String</types>
+        <types>Date</types>
+        <types>Number</types>
+        <types>AnyRef</types>
+        <numberQualifiers>
+          <precision>15</precision>
+          <scale>2</scale>
+        </numberQualifiers>
+        <stringQualifiers>
+          <length>1000</length>
+        </stringQualifiers>
+        <dateQualifiers/>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Может быть использовано для хранения ссылочного соответствия для основного параметра (некоторый мэпинг).
+В этом случае колонку &quot;Имя параметра&quot; следует заполнять одним и тем же значением </value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <attributes uuid="17343142-ac88-4263-bfde-ea54d4bb898a">
+      <name>Описание</name>
+      <synonym>
+        <key>ru</key>
+        <value>Описание</value>
+      </synonym>
+      <type>
+        <types>String</types>
+        <stringQualifiers>
+          <length>500</length>
+        </stringQualifiers>
+      </type>
+      <toolTip>
+        <key>ru</key>
+        <value>Используется для произвольного описания назначения параметров</value>
+      </toolTip>
+      <minValue xsi:type="core:UndefinedValue"/>
+      <maxValue xsi:type="core:UndefinedValue"/>
+      <dataHistory>Use</dataHistory>
+      <fullTextSearch>Use</fullTextSearch>
+    </attributes>
+    <use>ForFolderAndItem</use>
+  </tabularSections>
+  <forms uuid="8899be36-3f24-4597-9dae-e256f5f9e976">
+    <name>ФормаЭлемента</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма элемента</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <templates uuid="3bd2efa0-7ec0-49d0-9546-799889c9ed2c">
+    <name>ШаблонКодаФормирования</name>
+    <synonym>
+      <key>ru</key>
+      <value>Шаблон кода формирования</value>
+    </synonym>
+    <templateType>TextDocument</templateType>
+  </templates>
+  <templates uuid="b7f423f7-1b51-48b5-83d3-5ac9056643a4">
+    <name>БиблиотекаПодсветки</name>
+    <synonym>
+      <key>ru</key>
+      <value>Библиотека подсветки</value>
+    </synonym>
+    <templateType>BinaryData</templateType>
+  </templates>
+</mdclass:Catalog>

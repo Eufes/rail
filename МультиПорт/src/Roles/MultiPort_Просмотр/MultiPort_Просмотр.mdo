@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Role xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="72d57619-7eda-49ce-971e-6add94a89803">
+  <name>MultiPort_Просмотр</name>
+  <synonym>
+    <key>ru</key>
+    <value>(MultiPort) Просмотр</value>
+  </synonym>
+  <comment>Просмотр в рамках объектов подсистемы</comment>
+</mdclass:Role>

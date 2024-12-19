@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="a0159754-8bf3-4861-8592-9a381886edf8">
+  <producedTypes>
+    <selectionType typeId="ca4922bf-55f3-4109-b9ad-b67a03103410" valueTypeId="561cafc4-8ce8-4a30-9f34-3ebf684d2124"/>
+    <listType typeId="8ee3dacd-018b-4fe8-952f-9b3d8ac4b803" valueTypeId="db8334aa-d49d-4cb8-b5ff-186898c6ccb8"/>
+    <managerType typeId="aec00f6d-b134-4d52-9c5d-69a4ff33ee20" valueTypeId="6c940293-688d-4baf-9256-063369383e5a"/>
+    <recordSetType typeId="6e2bf4da-c4fa-4c64-8473-beea2b8fb6ef" valueTypeId="fe2a752f-ff79-4a8c-87e1-b79862db9bf4"/>
+    <recordKeyType typeId="1cd48d89-1665-4d0b-b105-ed8535d32703" valueTypeId="e2774da1-2535-467d-a52f-b24ee8c4963c"/>
+    <recordType typeId="4a6e91d9-a24f-468b-8726-e403bda60147" valueTypeId="67deb089-7daa-4862-98fa-cff3825bcf51"/>
+    <recordManagerType typeId="2ec2ff28-48b5-4f7a-b782-2524f127f4e5" valueTypeId="098236ee-2e26-41fd-8db1-5a9a38989834"/>
+  </producedTypes>
+  <name>MultiPort_ИспользуемыеНастройкиДляСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Используемые настройки для сообщений (MultiPort)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.MultiPort_ИспользуемыеНастройкиДляСообщений.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.MultiPort_ИспользуемыеНастройкиДляСообщений.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <informationRegisterPeriodicity>Day</informationRegisterPeriodicity>
+  <mainFilterOnPeriod>true</mainFilterOnPeriod>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Используемые настройки для сообщений (MultiPort)</value>
+  </listPresentation>
+  <resources uuid="f1cff142-4779-4ecb-affd-85f8db2a9bf6">
+    <name>НастройкаДляСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Настройка для сообщения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_НастройкиВходящихСообщений</types>
+      <types>CatalogRef.MultiPort_НастройкиИсходящихСообщений</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </resources>
+  <attributes uuid="23fb787e-ce9e-444f-9b09-71a330845dfd">
+    <name>Комментарий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Комментарий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </attributes>
+  <dimensions uuid="e65a9bae-81fb-4983-bc24-f1fb43ea614d">
+    <name>ТипСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сообщения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_ТипВходящегоСообщения</types>
+      <types>CatalogRef.MultiPort_ТипИсходящегоСообщения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="099b1a3a-f039-4a92-b3a2-2fe0861f3176">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="4cc867f0-b072-4a45-b74b-9f97039b6712">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

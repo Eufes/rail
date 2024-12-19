@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="02b924b9-7355-47b4-979a-422aa0d7b97d">
+  <name>MultiPort</name>
+  <synonym>
+    <key>ru</key>
+    <value>Проводник (MultiPort)</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <picture xsi:type="core:PictureRef">
+    <picture>CommonPicture.MultiPort_Подсистема</picture>
+  </picture>
+  <content>DataProcessor.MultiPort_Администрирование</content>
+  <content>CommonCommand.MultiPort_ВнешниеСистемы</content>
+  <content>CommonCommand.MultiPort_ПараметрыПодключенияКВнешнимСистемам</content>
+  <subsystems>ОбъектыПодсистемыMultiPort</subsystems>
+  <subsystems>ОбъектыКСравнению</subsystems>
+  <subsystems>ОбъектыДополнительные</subsystems>
+</mdclass:Subsystem>

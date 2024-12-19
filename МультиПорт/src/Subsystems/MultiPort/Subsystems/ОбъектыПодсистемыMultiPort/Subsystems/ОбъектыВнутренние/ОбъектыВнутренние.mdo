@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="5886e4b2-4f30-4082-bd93-49cfe04a17a7">
+  <name>ОбъектыВнутренние</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты внутренние</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Модули, обработчики, подписки, обеспечивающие выполнение процесса обмена</value>
+  </explanation>
+  <content>CommonModule.MultiPort_Обмен</content>
+  <content>CommonModule.MultiPort_ВызовСервера</content>
+  <content>CommonModule.MultiPort_ПовтИсп</content>
+  <content>CommonModule.MultiPort_Переопределяемый</content>
+  <content>CommonModule.MultiPort_Привилегированный</content>
+  <content>Enum.MultiPort_СпособыПреобразованияСообщений</content>
+  <content>ScheduledJob.MultiPort_ПодготовкаИсходящих</content>
+  <content>ScheduledJob.MultiPort_УдалениеНеактуальныхДанных</content>
+  <content>WebService.MultiPort_Central</content>
+  <content>Enum.MultiPort_СостоянияИсходящих</content>
+  <content>Enum.MultiPort_УровниСобытийПротокола</content>
+  <content>Enum.MultiPort_ВариантыПроизвольногоОбработчика</content>
+  <content>Enum.MultiPort_ИнтерфейсыТранспорта</content>
+  <content>CommonPicture.MultiPort_ВводимыеСимволыВидны</content>
+  <content>CommonPicture.MultiPort_ВводимыеСимволыСкрыты</content>
+  <content>CommandGroup.MultiPort_Управление</content>
+  <content>Enum.MultiPort_СостоянияВходящих</content>
+  <content>HTTPService.MultiPort_Central</content>
+  <content>CommonModule.MultiPort_ШлюзБСПСервер</content>
+  <content>CommonModule.MultiPort_ОбщегоНазначения</content>
+  <content>CommonModule.MultiPort_КонструкторСообщенийXML</content>
+  <content>CommonModule.MultiPort_НаВремяВызоваПовтИсп</content>
+  <content>ScheduledJob.MultiPort_ОбработкаВходящих</content>
+  <content>ScheduledJob.MultiPort_ОтправкаИсходящих</content>
+  <content>CommonModule.MultiPort_ШлюзБСПКлиентСервер</content>
+  <content>CommonCommand.MultiPort_ВнешниеСистемы</content>
+  <content>CommonPicture.MultiPort_ПодключениеЖелтый</content>
+  <content>CommonPicture.MultiPort_ВниманиеКрасный</content>
+  <content>CommonPicture.MultiPort_КругКрасный</content>
+  <content>CommonPicture.MultiPort_КругЗеленый</content>
+  <content>CommonCommand.MultiPort_ПараметрыПодключенияКВнешнимСистемам</content>
+  <parentSubsystem>Subsystem.MultiPort.Subsystem.ОбъектыПодсистемыMultiPort</parentSubsystem>
+</mdclass:Subsystem>

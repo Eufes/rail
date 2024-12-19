@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="e5aed343-472f-40d1-8c45-4f1d7649c9d0">
+  <producedTypes>
+    <refType typeId="ce36338f-f87a-422f-86e9-44fd4a94f199" valueTypeId="7b9b21b1-8220-4166-a493-906ff65812db"/>
+    <listType typeId="1c086721-a56c-43db-a6d7-a381bf8d8848" valueTypeId="5e9180f8-5f85-412b-b865-77b9a6dd6714"/>
+    <managerType typeId="ed10cc78-c867-4538-9f89-42b3a10960a0" valueTypeId="52992dd7-f064-4c35-8abc-d7cd4a2f0dd2"/>
+  </producedTypes>
+  <name>MultiPort_СпособыПреобразованияСообщений</name>
+  <synonym>
+    <key>ru</key>
+    <value>Способы преобразования сообщений (MultiPort)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="c2a40679-9d84-4dac-95f5-f4634e179d05">
+    <name>ПроизвольныйАлгоритм</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный алгоритм</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="6430d094-4274-48b0-934f-a6cc226043a3">
+    <name>КонструкторСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Конструктор сообщения</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="05ce6dab-17f5-4a9a-8b09-4163a5b6f11a">
+    <name>ПравилоКонвертации</name>
+    <synonym>
+      <key>ru</key>
+      <value>Правило конвертации</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

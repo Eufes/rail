@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="11dd5f86-5902-4a58-8d82-3fdb9874094f">
+  <name>ОбъектыДополнительные</name>
+  <synonym>
+    <key>ru</key>
+    <value>Объекты дополнительные</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <explanation>
+    <key>ru</key>
+    <value>Объекты, которые используются как вспомогательные для учета особенностей решаемой задачи интеграционного взаимодействия (отчеты, обработки, регистры для отчетов и т.д.) - конкретно для текущей конфигурации. Не подлежат к сравнению и включению в поставку.</value>
+  </explanation>
+  <content>Role.ПолныеПрава</content>
+  <subsystems>ОбъектыССылкамиНаБСП</subsystems>
+  <parentSubsystem>Subsystem.MultiPort</parentSubsystem>
+</mdclass:Subsystem>

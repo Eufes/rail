@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:EventSubscription xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="82180dbc-9ae7-4cdf-aec8-4de8a7300aa4">
+  <name>MultiPort_ПриЗаписиРегистраСведений</name>
+  <synonym>
+    <key>ru</key>
+    <value>MultiPort при записи регистра сведений</value>
+  </synonym>
+  <source>
+    <types>InformationRegisterRecordSet.MultiPort_ИспользуемыеНастройкиДляСообщений</types>
+  </source>
+  <event>OnWrite</event>
+  <handler>CommonModule.MultiPort_Обмен.ПриЗаписиРегистраСведений</handler>
+</mdclass:EventSubscription>

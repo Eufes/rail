@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:CommonPicture xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="80a48a4a-c80d-4074-b48d-b2aea64c9331">
+  <name>MultiPort_ВниманиеКрасный</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внимание красный (MultiPort)</value>
+  </synonym>
+</mdclass:CommonPicture>

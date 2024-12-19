@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:InformationRegister xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="078d77f3-8dd6-41e9-ae9b-dbfa5a10a866">
+  <producedTypes>
+    <selectionType typeId="f1c8775b-cb46-468e-914c-d58b7d4caa3b" valueTypeId="e0211050-91eb-4c73-89e9-5c4622189fbd"/>
+    <listType typeId="160f2c50-e873-4833-bc14-f0a08c9d4b3f" valueTypeId="53098fb2-8c83-4726-aeed-db4a88e0a953"/>
+    <managerType typeId="facf52f1-a11c-46ae-9b03-bb90fef9cb79" valueTypeId="4f029c48-6e37-4537-961d-dee7bf0f0ffe"/>
+    <recordSetType typeId="329bd4ff-37e2-47de-9d1c-82b86c6ede58" valueTypeId="106bdc7e-ee7e-487e-a7df-b897db390bf8"/>
+    <recordKeyType typeId="49082e13-ad3e-43d7-b6fe-ad7e4bfbe40d" valueTypeId="5c7a4544-5f2f-4770-a2b2-1a2cff7829d5"/>
+    <recordType typeId="36f766a0-7337-4980-b9d5-fd64dc9a3b39" valueTypeId="fa1ea557-0721-417f-b1b6-f13553007850"/>
+    <recordManagerType typeId="db54cab7-a904-49cf-8b45-cf6239ac1165" valueTypeId="7128b5e8-a721-4a82-9b0d-56af34516de7"/>
+  </producedTypes>
+  <name>MultiPort_ПодпискиОбмена</name>
+  <synonym>
+    <key>ru</key>
+    <value>Подписки обмена (MultiPort)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <editType>InDialog</editType>
+  <defaultRecordForm>InformationRegister.MultiPort_ПодпискиОбмена.Form.ФормаЗаписи</defaultRecordForm>
+  <defaultListForm>InformationRegister.MultiPort_ПодпискиОбмена.Form.ФормаСписка</defaultListForm>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Active</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>LineNumber</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Recorder</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Period</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <listPresentation>
+    <key>ru</key>
+    <value>Подписки обмена (MultiPort)</value>
+  </listPresentation>
+  <resources uuid="66ac24c1-2fd8-4c8d-9f53-17c6133f8cbc">
+    <name>ОбработчикВМоментСобытия</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обработчик в момент события</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <types>CatalogRef.ДополнительныеОтчетыИОбработки</types>
+      <stringQualifiers>
+        <length>50</length>
+      </stringQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Если строка, то указывается встроенная обработка в конфигурацию, в ином случае ссылка на подключаемую обработку. Используется для выполнения доп. процедур в момент события, до обработки исходящего сообщения: для проверка данных, сбора доп. информации.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+  </resources>
+  <attributes uuid="136c1e26-145c-423e-9370-c298eb077525">
+    <name>Используется</name>
+    <synonym>
+      <key>ru</key>
+      <value>Используется</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <attributes uuid="2dcb8706-386e-4000-aed0-14d2992b5bb8">
+    <name>ОбрабатыватьИсходящееСообщениеСразу</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обрабатывать исходящее сообщение сразу</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Обработка исходящих сообщений будет производиться сразу в момент соответствующего события объекта.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+  </attributes>
+  <dimensions uuid="773f41f1-9e32-478f-9426-e21d65af6f5e">
+    <name>ТипОбъекта</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип объекта</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="dd2e0617-51d7-44b6-a854-d8726ee79547">
+    <name>СобытиеПоПодписке</name>
+    <synonym>
+      <key>ru</key>
+      <value>Событие по подписке</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <dimensions uuid="363bd695-77d5-48a8-ac33-695adc0dfa20">
+    <name>ТипСообщения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Тип сообщения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_ТипИсходящегоСообщения</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <mainFilter>true</mainFilter>
+  </dimensions>
+  <forms uuid="88a0c6e4-87d7-4868-9075-2d094ac8408a">
+    <name>ФормаСписка</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма списка</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+  <forms uuid="e29a3fbd-890d-449e-8215-7910fc7debea">
+    <name>ФормаЗаписи</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма записи</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:InformationRegister>

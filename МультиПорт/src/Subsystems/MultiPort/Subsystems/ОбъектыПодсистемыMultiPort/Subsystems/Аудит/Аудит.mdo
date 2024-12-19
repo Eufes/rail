@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Subsystem xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="337e1c4c-9c6f-4ba2-8345-60a1234d03e4">
+  <name>Аудит</name>
+  <synonym>
+    <key>ru</key>
+    <value>Аудит</value>
+  </synonym>
+  <includeHelpInContents>true</includeHelpInContents>
+  <includeInCommandInterface>true</includeInCommandInterface>
+  <explanation>
+    <key>ru</key>
+    <value>Протоколирование (логирование), отчеты, статистика</value>
+  </explanation>
+  <content>DataProcessor.MultiPort_Администрирование</content>
+  <content>InformationRegister.MultiPort_СостояниеОбъектовОбмена</content>
+  <content>InformationRegister.MultiPort_ПротоколОбмена</content>
+  <content>Enum.MultiPort_УровниСобытийПротокола</content>
+  <content>Constant.MultiPort_КаталогХраненияЛогФайлов</content>
+  <content>CommonModule.MultiPort_ВызовСервера</content>
+  <parentSubsystem>Subsystem.MultiPort.Subsystem.ОбъектыПодсистемыMultiPort</parentSubsystem>
+</mdclass:Subsystem>

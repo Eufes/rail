@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Enum xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="bbe75ac0-89c8-4f20-a3fe-93e72e09c3e2">
+  <producedTypes>
+    <refType typeId="3a112420-3ad0-429d-8bd6-fa9fd8acfebf" valueTypeId="e4a97b7d-3498-4e0c-ab78-7bab95212c2a"/>
+    <listType typeId="3a9537c0-01d0-41fb-b2db-9a2866cda188" valueTypeId="8c6ae8f4-8f87-4296-8701-190e5719d75c"/>
+    <managerType typeId="64631470-0ce3-47e7-8913-6d037603c3de" valueTypeId="1ca2e74e-93d4-434d-af48-b49d132520a8"/>
+  </producedTypes>
+  <name>MultiPort_ВариантыПроизвольногоОбработчика</name>
+  <synonym>
+    <key>ru</key>
+    <value>Варианты произвольного обработчика (MultiPort)</value>
+  </synonym>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Order</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <quickChoice>true</quickChoice>
+  <choiceMode>BothWays</choiceMode>
+  <enumValues uuid="186b0abf-db4f-474d-9b92-6231dd792105">
+    <name>ПроизвольныйКод</name>
+    <synonym>
+      <key>ru</key>
+      <value>Произвольный код</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="54a24034-1f2e-4235-96f3-87ce9456d444">
+    <name>ВстроенныйОбработчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Встроенный обработчик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="0a77cf72-aedd-4a7f-828f-ede9fdc24e19">
+    <name>ПодключаемыйОбработчик</name>
+    <synonym>
+      <key>ru</key>
+      <value>Подключаемый обработчик</value>
+    </synonym>
+  </enumValues>
+  <enumValues uuid="c65fecda-edbf-446f-8ab4-badc345b6f79">
+    <name>ОпределяетсяВнеПодсистемы</name>
+    <synonym>
+      <key>ru</key>
+      <value>Определяется вне подсистемы</value>
+    </synonym>
+  </enumValues>
+</mdclass:Enum>

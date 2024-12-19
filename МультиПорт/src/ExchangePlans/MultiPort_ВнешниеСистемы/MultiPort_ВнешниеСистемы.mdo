@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:ExchangePlan xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="f4487480-cdfa-4577-82fb-d0cba62749f0" thisNode="e45e4e2b-55db-4f62-9359-d2c07c243bd7">
+  <producedTypes>
+    <objectType typeId="e28cbb30-9ff7-4f61-913f-3e598c8b8493" valueTypeId="3fa8e9e4-c8b6-4eab-9ba3-15d30ca3392e"/>
+    <refType typeId="a08afd54-969e-4717-b4d7-79ee995a5c71" valueTypeId="604fd98d-eaca-49d2-8e7d-be24fa7da903"/>
+    <selectionType typeId="116c4945-4cf2-4af1-ba29-143504999c33" valueTypeId="e534bed5-6b63-43fc-b72f-95be1a0ecfe2"/>
+    <listType typeId="83ae94d5-8bac-4819-832c-5c2916a6a492" valueTypeId="73b81d0c-a9b6-41c0-b5c1-5dcd99a91f8f"/>
+    <managerType typeId="644a13d9-91a8-4716-9998-83c28145d6e0" valueTypeId="2313f9a1-88fc-450d-a039-5cffdf17880d"/>
+  </producedTypes>
+  <name>MultiPort_ВнешниеСистемы</name>
+  <synonym>
+    <key>ru</key>
+    <value>Внешние системы (MultiPort)</value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>ExchangePlan.MultiPort_ВнешниеСистемы.StandardAttribute.Description</inputByString>
+  <inputByString>ExchangePlan.MultiPort_ВнешниеСистемы.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ThisNode</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>ReceivedNo</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>SentNo</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Ref</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>DeletionMark</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Description</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <standardAttributes>
+    <dataHistory>Use</dataHistory>
+    <name>Code</name>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fillChecking>ShowError</fillChecking>
+    <fullTextSearch>Use</fullTextSearch>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+  </standardAttributes>
+  <createOnInput>DontUse</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Внешние системы (MultiPort)</value>
+  </objectPresentation>
+  <codeLength>9</codeLength>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <descriptionLength>100</descriptionLength>
+  <content>
+    <mdObject>InformationRegister.СоответствияОбъектовИнформационныхБаз</mdObject>
+    <autoRecord>Allow</autoRecord>
+  </content>
+  <content>
+    <mdObject>Catalog.MultiPort_ИнтеграционныеПроцессы</mdObject>
+  </content>
+  <defaultPresentation>AsDescription</defaultPresentation>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <defaultObjectForm>ExchangePlan.MultiPort_ВнешниеСистемы.Form.ФормаУзла</defaultObjectForm>
+  <attributes uuid="ad8f1c80-6d61-4d48-9683-94f95cede3cd">
+    <name>ОбменВключен</name>
+    <synonym>
+      <key>ru</key>
+      <value>Обмен включен</value>
+    </synonym>
+    <type>
+      <types>Boolean</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f0b94263-5b21-4602-bb2d-775f1bef4134">
+    <name>ПользовательСоединения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Пользователь соединения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.Пользователи</types>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Пользователь под которым подключается внешняя система к текущей. Используется для проверки авторизованного пользователя с указанным пользователем (безопасность).
+Если указать пустое значение, то проверка осуществляться не будет.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="bf882ec6-9c87-4780-a3c4-812332ec8988">
+    <name>ПараметрыПодключения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Параметры подключения</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultiPort_ПодключенияКВнешнимСистемам</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="ea715613-d344-40af-a4c3-5fe5a0a723c0">
+    <name>ДополнительныеСведения</name>
+    <synonym>
+      <key>ru</key>
+      <value>Дополнительные сведения</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers/>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="3af59211-e2ca-46fa-9c8b-85021ce4d0e9">
+    <name>ИмяПользователяРеглЗаданий</name>
+    <synonym>
+      <key>ru</key>
+      <value>Имя пользователя регл заданий</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>100</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="08466071-66e4-4b0e-a840-ee368fd80649">
+    <name>ИДРеглЗаданияПодготовкаИсходящих</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД Регламентного задания подготовка исходящих</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9aff4a67-1f13-474d-a868-ee07dcf12639">
+    <name>ИДРеглЗаданияОтправкаИсходящих</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД Регламентного задания отправка исходящих</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0300ead8-bbc1-4e23-b763-c11c6d7fe0cc">
+    <name>ИДРеглЗаданияОбработкаВходящих</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД Регламентного задания обработка входящих</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5af5660d-88fb-4c17-a8fb-d9c9ca82fcb5">
+    <name>ИДРеглЗаданияУдалениеСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>ИД Регламентного задания удаление сообщений</value>
+    </synonym>
+    <type>
+      <types>UUID</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="57537446-c2b5-4dd1-b89b-5108c4f60d57">
+    <name>СрокХраненияСообщенийВДнях</name>
+    <synonym>
+      <key>ru</key>
+      <value>Срок хранения сообщений в днях</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="78097706-640e-4a42-847d-5d9e0e436991">
+    <name>КоличествоОбрабатываемыхИсходящихБезОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество обрабатываемых исходящих без ошибок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество записей очереди, которое будет выбираться регламентным заданием для обработки за одно обращение к очереди.
+Выбираемые записи без признака ошибки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="61eed464-beb7-48b2-b01e-d6c090f08cb9">
+    <name>КоличествоОбрабатываемыхИсходящихСОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество обрабатываемых исходящих с ошибками</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество записей очереди, которое будет выбираться регламентным заданием для обработки (перед отправкой) за одно обращение к очереди.
+Выбираемые записи с признаком ошибки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="5fb13ed2-a9ee-471a-834b-4ad3d0aa7de9">
+    <name>КоличествоВыгружаемыхИсходящихБезОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество выгружаемых исходящих без ошибок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество записей очереди, которое будет выбираться регламентным заданием для выгрузки за одно обращение к очереди.
+Выбираемые записи без признака ошибки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="98c72086-4078-4dfd-b79c-080ac006d6b0">
+    <name>КоличествоВыгружаемыхИсходящихСОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество выгружаемых исходящих с ошибками</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество записей очереди, которое будет выбираться регламентным заданием для выгрузки за одно обращение к очереди.
+Выбираемые записи с признаком ошибки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="abc42752-d5d0-442a-bc47-9e12a09420d3">
+    <name>КоличествоОбрабатываемыхВходящихБезОшибок</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество обрабатываемых входящих без ошибок</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество записей очереди, которое будет выбираться регламентным заданием для обработки за одно обращение к очереди.
+Выбираемые записи без признака ошибки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="69fd8c11-ca6c-4de7-b3ff-c2d1e7bb8496">
+    <name>КоличествоОбрабатываемыхВходящихСОшибками</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество обрабатываемых входящих с ошибками</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество записей очереди, которое будет выбираться регламентным заданием для обработки за одно обращение к очереди.
+Выбираемые записи с признаком ошибки.</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:NumberValue">
+      <value>1</value>
+    </fillValue>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="f42599a7-9211-4e77-9542-85f8f0a858b1">
+    <name>КоличествоУдаляемыхСообщений</name>
+    <synonym>
+      <key>ru</key>
+      <value>Количество удаляемых сообщений</value>
+    </synonym>
+    <type>
+      <types>Number</types>
+      <numberQualifiers>
+        <precision>10</precision>
+        <nonNegative>true</nonNegative>
+      </numberQualifiers>
+    </type>
+    <toolTip>
+      <key>ru</key>
+      <value>Количество выбираемых сообщений исходящих и входящих (на каждый вид) для удаления за одну итерацию регламентного задания</value>
+    </toolTip>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <forms uuid="0bd4f41c-cd8f-4043-8045-c465acdabf56">
+    <name>ФормаУзла</name>
+    <synonym>
+      <key>ru</key>
+      <value>Форма узла</value>
+    </synonym>
+    <usePurposes>PersonalComputer</usePurposes>
+    <usePurposes>MobileDevice</usePurposes>
+  </forms>
+</mdclass:ExchangePlan>
