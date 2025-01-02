@@ -30,5 +30,6 @@
   <content>InformationRegister.MultiPort_ОчередьВходящих</content>
   <content>InformationRegister.MultiPort_ПодпискиОбмена</content>
   <content>Catalog.MultiPort_НастройкиВходящихСообщений</content>
+  <content>Catalog.MultPort_РесурсыHTTP</content>
   <parentSubsystem>Subsystem.MultiPort.Subsystem.ОбъектыПодсистемыMultiPort</parentSubsystem>
 </mdclass:Subsystem>
