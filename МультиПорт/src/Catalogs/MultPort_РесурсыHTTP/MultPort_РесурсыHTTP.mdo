@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mdclass:Catalog xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:core="http://g5.1c.ru/v8/dt/mcore" xmlns:mdclass="http://g5.1c.ru/v8/dt/metadata/mdclass" uuid="75276a3c-d6c2-40a0-80ab-78fe1ad43c24">
+  <producedTypes>
+    <objectType typeId="6cdcfef1-54a2-4c72-818d-38375f8d84d9" valueTypeId="391845d5-61c8-48e2-9b20-c4c8628c9cf4"/>
+    <refType typeId="c2802cb4-0a56-4eaa-ba59-3706c8035078" valueTypeId="733212e0-ae0a-4f01-98f1-24f9420c1f9a"/>
+    <selectionType typeId="81208c41-37b1-46d0-8d87-128b60b65396" valueTypeId="e662b781-8e58-4c7f-873d-5da511ffdc79"/>
+    <listType typeId="57e7e9d4-6860-4044-94a4-ea0c1e83b726" valueTypeId="84b5efd3-4868-4271-93d1-7464bf078e88"/>
+    <managerType typeId="8e2d59ca-c0b8-410c-b609-beafe0b70d2c" valueTypeId="b438ad61-54f0-462e-8b7c-10374bce11c1"/>
+  </producedTypes>
+  <name>MultPort_РесурсыHTTP</name>
+  <synonym>
+    <key>ru</key>
+    <value>Ресурсы HTTP (MultiPort) </value>
+  </synonym>
+  <useStandardCommands>true</useStandardCommands>
+  <inputByString>Catalog.MultPort_РесурсыHTTP.StandardAttribute.Code</inputByString>
+  <fullTextSearchOnInputByString>DontUse</fullTextSearchOnInputByString>
+  <createOnInput>Use</createOnInput>
+  <dataLockControlMode>Managed</dataLockControlMode>
+  <fullTextSearch>Use</fullTextSearch>
+  <objectPresentation>
+    <key>ru</key>
+    <value>Ресурс HTTP (MultiPort) </value>
+  </objectPresentation>
+  <listPresentation>
+    <key>ru</key>
+    <value>Ресурсы HTTP (MultiPort) </value>
+  </listPresentation>
+  <levelCount>2</levelCount>
+  <foldersOnTop>true</foldersOnTop>
+  <codeLength>9</codeLength>
+  <codeType>String</codeType>
+  <codeAllowedLength>Variable</codeAllowedLength>
+  <checkUnique>true</checkUnique>
+  <autonumbering>true</autonumbering>
+  <editType>InDialog</editType>
+  <choiceMode>BothWays</choiceMode>
+  <attributes uuid="59dbad15-3f40-430d-8f43-6cf060085fed">
+    <name>ВнешняяСистема</name>
+    <synonym>
+      <key>ru</key>
+      <value>Внешняя система</value>
+    </synonym>
+    <type>
+      <types>ExchangePlanRef.MultiPort_ВнешниеСистемы</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="10ccb447-b691-4bdb-9936-606b76f5d6f1">
+    <name>Ресурс</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>500</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+</mdclass:Catalog>

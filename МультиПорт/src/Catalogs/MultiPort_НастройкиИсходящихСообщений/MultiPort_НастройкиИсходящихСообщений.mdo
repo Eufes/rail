@@ -354,17 +354,17 @@
     <dataHistory>Use</dataHistory>
   </attributes>
   <attributes uuid="10de9366-14d3-4048-b3e0-beaef3b8b35b">
-    <name>СинхронныйРежим</name>
+    <name>ОтправлятьСразуПослеОбработки</name>
     <synonym>
       <key>ru</key>
-      <value>Синхронный режим</value>
+      <value>Отправлять сразу после обработки</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Признак определяет поведение системы с сообщением: отправка выполняется сразу или через очередь исходящих</value>
+      <value>Признак определяет поведение системы с сообщением: отправка выполняется сразу или ожидая обработку очереди исходящих</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -398,7 +398,7 @@
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Указываются для возможности использовать другие параметры подключения к внешней системе для конкретного типа сообщения</value>
+      <value>Параметры подключения к внешней системе для текущего типа сообщения</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
@@ -498,6 +498,41 @@
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>
     <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="9292b725-2103-4636-9ae7-37e07a8d3c3a">
+    <name>РесурсHTTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Ресурс HTTP</value>
+    </synonym>
+    <type>
+      <types>CatalogRef.MultPort_РесурсыHTTP</types>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:UndefinedValue"/>
+    <fullTextSearch>Use</fullTextSearch>
+    <dataHistory>Use</dataHistory>
+  </attributes>
+  <attributes uuid="0bd5f191-99d7-418c-942d-b54661414a15">
+    <name>МетодHTTP</name>
+    <synonym>
+      <key>ru</key>
+      <value>Метод HTTP</value>
+    </synonym>
+    <type>
+      <types>String</types>
+      <stringQualifiers>
+        <length>10</length>
+      </stringQualifiers>
+    </type>
+    <minValue xsi:type="core:UndefinedValue"/>
+    <maxValue xsi:type="core:UndefinedValue"/>
+    <fillValue xsi:type="core:StringValue">
+      <value></value>
+    </fillValue>
     <fullTextSearch>Use</fullTextSearch>
     <dataHistory>Use</dataHistory>
   </attributes>

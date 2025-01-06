@@ -98,6 +98,7 @@
   <catalogs>Catalog.MultiPort_СхемыXSD</catalogs>
   <catalogs>Catalog.MultiPort_ТипВходящегоСообщения</catalogs>
   <catalogs>Catalog.MultiPort_ТипИсходящегоСообщения</catalogs>
+  <catalogs>Catalog.MultPort_РесурсыHTTP</catalogs>
   <documents>Document.ТестовыйДокумент</documents>
   <enums>Enum.MultiPort_ВариантыПроизвольногоОбработчика</enums>
   <enums>Enum.MultiPort_ИнтерфейсыТранспорта</enums>

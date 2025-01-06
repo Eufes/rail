@@ -116,17 +116,17 @@
   <choiceMode>BothWays</choiceMode>
   <defaultObjectForm>Catalog.MultiPort_НастройкиВходящихСообщений.Form.ФормаЭлемента</defaultObjectForm>
   <attributes uuid="8ee8d544-bb70-4459-8910-2c71acf74bd8">
-    <name>СинхронныйРежим</name>
+    <name>ОбрабатыватьСразуПриПолучении</name>
     <synonym>
       <key>ru</key>
-      <value>Синхронный режим</value>
+      <value>Обрабатывать сразу при получении</value>
     </synonym>
     <type>
       <types>Boolean</types>
     </type>
     <toolTip>
       <key>ru</key>
-      <value>Признак определяет поведение системы с сообщением: обработка выполняется сразу или через очередь входящих</value>
+      <value>Признак определяет поведение системы с сообщением: обработка выполняется сразу или ожидая обработку очереди входящих</value>
     </toolTip>
     <minValue xsi:type="core:UndefinedValue"/>
     <maxValue xsi:type="core:UndefinedValue"/>

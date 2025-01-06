@@ -243,7 +243,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.MultiPort_НастройкиИсходящихСообщений.Attribute.СинхронныйРежим</name>
+		<name>Catalog.MultiPort_НастройкиИсходящихСообщений.Attribute.ОтправлятьСразуПослеОбработки</name>
 		<right>
 			<name>View</name>
 			<value>false</value>
@@ -2696,7 +2696,7 @@
 		</right>
 	</object>
 	<object>
-		<name>Catalog.MultiPort_НастройкиВходящихСообщений.Attribute.СинхронныйРежим</name>
+		<name>Catalog.MultiPort_НастройкиВходящихСообщений.Attribute.ОбрабатыватьСразуПриПолучении</name>
 		<right>
 			<name>View</name>
 			<value>false</value>

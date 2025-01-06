@@ -308,7 +308,7 @@
               <common>true</common>
             </userVisible>
             <dataPath xsi:type="form:DataPath">
-              <segments>Объект.СинхронныйРежим</segments>
+              <segments>Объект.ОбрабатыватьСразуПриПолучении</segments>
             </dataPath>
             <extendedTooltip>
               <name>СинхронныйРежимРасширеннаяПодсказка</name>
